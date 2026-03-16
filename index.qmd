@@ -1,11 +1,22 @@
 ---
-title: "JChev"
+title: "Julia Chevan, PT, DPT, PhD, MPH"
+about:
+  template: solana
+  image: images/JuliaChevan.png
+  links:
+    - icon: mortarboard
+      text: ORCID
+      href: https://orcid.org/0000-0002-3044-4070
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/julia-chevan-78792ba/
+    - icon: envelope
+      text: Email
+      href: mailto:jchevan@springfieldcollege.edu
 ---
 
-This is a Quarto website.
+I am a physical therapist, health services researcher, and public health practitioner with 30 years of experience at the intersection of rehabilitation, implementation science, and chronic disease prevention. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Currently I serve as Senior Program Manager with the National Association of Chronic Disease Directors. My day-to-day work focuses on building the evidence for clinical-community partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2025, I will be joining the Clinical Research PhD Program at the University of Jamestown as faculty.
 
-```{r}
-1 + 1
-```
+To learn more about building your Quarto website visit <https://quarto.org/docs/websites>.
