@@ -1,0 +1,771 @@
+---
+title: "ADRD Driver Diagram"
+---
+
+```{=html}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence-Based Brain Health System Framework — Key Driver Diagram</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue-50: #E6F1FB; --blue-100: #B5D4F4; --blue-200: #85B7EB;
+    --blue-600: #185FA5; --blue-800: #0C447C; --blue-900: #042C53;
+    --green-50: #EAF3DE; --green-100: #C0DD97; --green-200: #97C459;
+    --green-600: #3B6D11; --green-800: #27500A; --green-900: #173404;
+    --amber-50: #FAEEDA; --amber-100: #FAC775; --amber-200: #EF9F27;
+    --amber-600: #854F0B; --amber-800: #633806; --amber-900: #412402;
+    --pink-50: #FBEAF0; --pink-100: #F4C0D1; --pink-200: #ED93B1;
+    --pink-600: #993556; --pink-800: #72243E; --pink-900: #4B1528;
+    --purple-50: #EEEDFE; --purple-100: #CECBF6; --purple-200: #AFA9EC;
+    --purple-600: #534AB7; --purple-800: #3C3489; --purple-900: #26215C;
+  }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .page-header {
+    background: #0f0f0f;
+    color: #fff;
+    padding: 32px 40px 28px;
+    border-bottom: 3px solid #1a1a1a;
+  }
+
+  .page-header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    color: #fff;
+  }
+
+  .page-header .subtitle {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: rgba(255,255,255,.45);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 32px 60px;
+  }
+
+  .aim-box {
+    background: #0f0f0f;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+
+  .aim-box .aim-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.45);
+    margin-bottom: 8px;
+  }
+
+  .aim-box p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.88);
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 24px;
+    padding: 14px 18px;
+    background: #f5f5f2;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.07);
+    align-items: center;
+  }
+
+  .legend-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #888;
+    margin-right: 4px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.5px;
+    color: #444;
+  }
+
+  .legend-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .legend-dash {
+    width: 18px;
+    height: 0;
+    border-top: 2px dashed #bbb;
+    flex-shrink: 0;
+  }
+
+  /* Primary driver blocks */
+  .pd-block {
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.08);
+  }
+
+  .pd-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 18px;
+    cursor: pointer;
+    user-select: none;
+    transition: filter .15s;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .pd-header:hover { filter: brightness(.97); }
+
+  .pd-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .07em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .pd-title {
+    font-size: 14px;
+    font-weight: 600;
+    flex: 1;
+    line-height: 1.35;
+  }
+
+  .pd-count {
+    font-size: 11px;
+    opacity: .5;
+    flex-shrink: 0;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .pd-chevron {
+    font-size: 10px;
+    opacity: .5;
+    flex-shrink: 0;
+    transition: transform .2s;
+    margin-left: 4px;
+  }
+
+  .pd-chevron.open { transform: rotate(90deg); }
+
+  .pd-body { display: none; padding: 0 12px 12px; }
+  .pd-body.open { display: block; }
+
+  .pd-desc {
+    font-size: 12px;
+    line-height: 1.65;
+    color: #555;
+    padding: 10px 12px 8px;
+    border-left: 3px solid rgba(0,0,0,.1);
+    margin: 4px 0 8px;
+  }
+
+  /* Secondary driver blocks */
+  .sd-block {
+    margin-bottom: 6px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.08);
+  }
+
+  .sd-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    cursor: pointer;
+    user-select: none;
+    transition: filter .15s;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .sd-header:hover { filter: brightness(.97); }
+
+  .sd-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: .6;
+    min-width: 28px;
+    flex-shrink: 0;
+  }
+
+  .sd-title {
+    font-size: 13px;
+    font-weight: 500;
+    flex: 1;
+    line-height: 1.3;
+  }
+
+  .sd-chevron {
+    font-size: 10px;
+    opacity: .45;
+    transition: transform .2s;
+    flex-shrink: 0;
+  }
+
+  .sd-chevron.open { transform: rotate(90deg); }
+
+  .sd-body { display: none; padding: 10px 14px 14px; background: rgba(255,255,255,.7); }
+  .sd-body.open { display: block; }
+
+  .act-section { margin-bottom: 10px; }
+  .act-section:last-child { margin-bottom: 0; }
+
+  .act-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .act-item {
+    font-size: 12px;
+    line-height: 1.6;
+    padding: 6px 0 6px 14px;
+    border-left: 2.5px solid rgba(0,0,0,.15);
+    margin-bottom: 5px;
+    color: #2a2a2a;
+  }
+
+  .act-item.supporting {
+    border-left-style: dashed;
+    color: #444;
+  }
+
+  /* PD color themes */
+  .p1 .pd-header { background: var(--blue-50); }
+  .p1 .pd-title { color: var(--blue-900); }
+  .p1 .pd-badge { background: var(--blue-100); color: var(--blue-800); }
+  .p1 .pd-count { color: var(--blue-600); }
+  .p1 .pd-chevron { color: var(--blue-800); }
+  .p1 .pd-desc { border-left-color: var(--blue-200); }
+  .p1 .sd-header { background: #f0f7fd; }
+  .p1 .sd-num { color: var(--blue-600); }
+  .p1 .sd-title { color: var(--blue-900); }
+  .p1 .sd-chevron { color: var(--blue-600); }
+  .p1 .act-label { color: var(--blue-600); }
+  .p1 .act-item { border-left-color: var(--blue-200); }
+
+  .p2 .pd-header { background: var(--green-50); }
+  .p2 .pd-title { color: var(--green-900); }
+  .p2 .pd-badge { background: var(--green-100); color: var(--green-800); }
+  .p2 .pd-count { color: var(--green-600); }
+  .p2 .pd-chevron { color: var(--green-800); }
+  .p2 .pd-desc { border-left-color: var(--green-200); }
+  .p2 .sd-header { background: #f1f8e8; }
+  .p2 .sd-num { color: var(--green-600); }
+  .p2 .sd-title { color: var(--green-900); }
+  .p2 .sd-chevron { color: var(--green-600); }
+  .p2 .act-label { color: var(--green-600); }
+  .p2 .act-item { border-left-color: var(--green-200); }
+
+  .p3 .pd-header { background: var(--amber-50); }
+  .p3 .pd-title { color: var(--amber-900); }
+  .p3 .pd-badge { background: var(--amber-100); color: var(--amber-800); }
+  .p3 .pd-count { color: var(--amber-600); }
+  .p3 .pd-chevron { color: var(--amber-800); }
+  .p3 .pd-desc { border-left-color: var(--amber-200); }
+  .p3 .sd-header { background: #fdf5e8; }
+  .p3 .sd-num { color: var(--amber-600); }
+  .p3 .sd-title { color: var(--amber-900); }
+  .p3 .sd-chevron { color: var(--amber-600); }
+  .p3 .act-label { color: var(--amber-600); }
+  .p3 .act-item { border-left-color: var(--amber-200); }
+
+  .p4 .pd-header { background: var(--pink-50); }
+  .p4 .pd-title { color: var(--pink-900); }
+  .p4 .pd-badge { background: var(--pink-100); color: var(--pink-800); }
+  .p4 .pd-count { color: var(--pink-600); }
+  .p4 .pd-chevron { color: var(--pink-800); }
+  .p4 .pd-desc { border-left-color: var(--pink-200); }
+  .p4 .sd-header { background: #fdf1f6; }
+  .p4 .sd-num { color: var(--pink-600); }
+  .p4 .sd-title { color: var(--pink-900); }
+  .p4 .sd-chevron { color: var(--pink-600); }
+  .p4 .act-label { color: var(--pink-600); }
+  .p4 .act-item { border-left-color: var(--pink-200); }
+
+  .p5 .pd-header { background: var(--purple-50); }
+  .p5 .pd-title { color: var(--purple-900); }
+  .p5 .pd-badge { background: var(--purple-100); color: var(--purple-800); }
+  .p5 .pd-count { color: var(--purple-600); }
+  .p5 .pd-chevron { color: var(--purple-800); }
+  .p5 .pd-desc { border-left-color: var(--purple-200); }
+  .p5 .sd-header { background: #f4f3fe; }
+  .p5 .sd-num { color: var(--purple-600); }
+  .p5 .sd-title { color: var(--purple-900); }
+  .p5 .sd-chevron { color: var(--purple-600); }
+  .p5 .act-label { color: var(--purple-600); }
+  .p5 .act-item { border-left-color: var(--purple-200); }
+
+  .controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .ctrl-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 7px 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.15);
+    background: #fff;
+    cursor: pointer;
+    color: #333;
+    letter-spacing: .04em;
+    transition: background .12s, border-color .12s;
+  }
+
+  .ctrl-btn:hover { background: #f5f5f2; border-color: rgba(0,0,0,.25); }
+
+  .stats-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .stat-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    color: #0f0f0f;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: .03em;
+  }
+
+  .stat-divider {
+    width: 1px;
+    background: rgba(0,0,0,.1);
+    align-self: stretch;
+    margin: 2px 0;
+  }
+
+  @media print {
+    .controls { display: none; }
+    .pd-body, .sd-body { display: block !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="subtitle">Evidence-based brain health system framework</div>
+  <h1>Key Driver Diagram</h1>
+</div>
+
+<div class="main">
+
+  <div class="aim-box">
+    <div class="aim-label">Aim statement</div>
+    <p>Adults—beginning in midlife—experience equitable, timely, and coordinated cycles of risk identification, early detection, follow-up, and action because evidence-informed brain health approaches are embedded within existing systems, supported by clearly defined and reliable community–clinical linkages, and actively stewarded by public health to maintain alignment and continuity across partners.</p>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">5</span><span class="stat-label">Primary drivers</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">16</span><span class="stat-label">Secondary drivers</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">24</span><span class="stat-label">Core activities</span></div>
+    <div class="stat-divider"></div>
+    <div class="stat"><span class="stat-num">70</span><span class="stat-label">Supporting activities</span></div>
+  </div>
+
+  <div class="legend">
+    <span class="legend-title">Key:</span>
+    <div class="legend-item"><div class="legend-dot" style="background:#378ADD"></div>PD 1 — Governance</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#639922"></div>PD 2 — Data &amp; learning</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#BA7517"></div>PD 3 — Navigation</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#D4537E"></div>PD 4 — Financing</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#7F77DD"></div>PD 5 — Community capacity</div>
+    <div class="legend-item"><div class="legend-dash"></div>Supporting activities</div>
+  </div>
+
+  <div class="controls">
+    <button class="ctrl-btn" onclick="expandAll()">Expand all</button>
+    <button class="ctrl-btn" onclick="collapseAll()">Collapse all</button>
+    <button class="ctrl-btn" onclick="window.print()">Print / Save PDF</button>
+  </div>
+
+  <div id="diagram"></div>
+
+</div>
+
+<script>
+const data = [
+  {
+    id:'p1', cls:'p1', num:'PD 1',
+    title:'Governance and backbone coordination',
+    desc:'Create durable cross-sector governance structures and backbone coordination functions that align public health, healthcare, and community organizations around shared system design, expectations, and improvement processes.',
+    sds:[
+      {
+        num:'1.1', title:'Cross-sector governance infrastructure',
+        core:[
+          'Establish cross-sector governance structures with defined decision authority, partner representation, and mechanisms for setting priorities, resolving disputes, and overseeing referral system design and improvement.',
+          'Define sustainable backbone coordination functions for public health that support cross-sector coordination and system oversight without duplicating clinical or community service delivery.'
+        ],
+        supporting:[
+          'Convene healthcare systems and CBOs to define shared goals, sector-specific priorities, and shared impact measures that guide the design of referral systems and coordination processes.',
+          "Leverage the health department's neutral convening role so that competing healthcare systems can collaborate and siloed relationships between healthcare organizations and CBOs can be reduced.",
+          'Ensure cross-departmental and cross-agency connections among those responsible for improving population health so that brain health, chronic disease prevention, aging services, and community–clinical linkage initiatives are coordinated rather than managed in parallel.',
+          'Establish overarching working relationships between public health agencies, healthcare organizations, and CBOs so that partnerships can be leveraged across multiple initiatives rather than built separately for each program.'
+        ]
+      },
+      {
+        num:'1.2', title:'Shared operational expectations and role clarity',
+        core:[
+          'Align healthcare organizations, CBOs, and public health partners around shared expectations for referral management, care coordination, and data exchange, including formal referral accountability agreements that define roles, timelines, and performance expectations across sectors.',
+          'Formalize referral pathways through shared protocols and partner agreements so that referral processes are clearly understood across healthcare and community partners while preserving trust, local adaptation, and operational flexibility.'
+        ],
+        supporting:[
+          'Structure shared responsibility across clinical and community partners so that adults who screen positive for cognitive concerns consistently receive appropriate follow-up, referral response, and connection to supportive services.',
+          'Establish shared expectations for communication and documentation after a referral so that partners know when to re-engage, adjust support, or escalate care.',
+          'Develop cross-sector referral toolkits and operational workflows that guide how healthcare organizations, CBOs, and public health partners coordinate screening, referrals, navigation, and follow-up.',
+          'Ensure referral systems are structured so that access to services does not depend on personal relationships within or across organizations.'
+        ]
+      },
+      {
+        num:'1.3', title:'Cross-sector relationship infrastructure',
+        core:[
+          'Recognize and resource relationship-building as foundational infrastructure for cross-sector coordination among healthcare organizations, CBOs, and public health partners.'
+        ],
+        supporting:[
+          'Facilitate relationships and partnerships between healthcare organizations and CBOs that clarify complementary roles and align interests in referral and support pathways.',
+          'Create conditions for cross-sector partners to move from blame toward shared understanding by surfacing operational constraints, differing incentives, and handoff challenges that affect collaboration.',
+          'Identify the values, incentives, and success measures driving each sector in order to surface areas of overlap and inform collaboration strategies that resonate across partners.',
+          'Develop shared resource libraries and stakeholder engagement plans that help partners understand available programs, referral platforms, and coordination infrastructure operating in the jurisdiction.'
+        ]
+      }
+    ]
+  },
+  {
+    id:'p2', cls:'p2', num:'PD 2',
+    title:'Shared referral data and learning systems',
+    desc:'Establish interoperable data infrastructure and shared performance frameworks that allow partners to track referrals, monitor outcomes, and continuously improve coordination processes.',
+    sds:[
+      {
+        num:'2.1', title:'Shared data definitions and documentation standards',
+        core:[
+          'Align partners on what data are exchanged, how referral outcomes are defined, and how referral information is documented so that participation in bidirectional referral systems is trusted and valued across sectors.',
+          'Develop cross-sector data and documentation standards that support interoperable referral systems, including structured data elements, shared value sets, and common documentation approaches.'
+        ],
+        supporting:[
+          'Develop shared metrics and reporting approaches that incorporate both quantitative and qualitative information so that referral data informs action and improvement rather than functioning solely as reporting.',
+          'Define shared goals and impact statements for referral coordination and follow-up that clarify how coordination processes are expected to improve access, service connection, caregiver support, and population health outcomes.'
+        ]
+      },
+      {
+        num:'2.2', title:'Interoperable referral data infrastructure',
+        core:[
+          'Establish interoperability standards that allow multiple referral platforms and data systems to participate in shared referral ecosystems without requiring all partners to adopt the same technology.',
+          'Build bidirectional data systems that integrate with electronic health record systems so that referral information can move reliably between clinical and community partners.'
+        ],
+        supporting:[
+          'Design systems that share referral data in ways that address privacy, compliance, and liability concerns so that trust between partners is maintained.',
+          'Develop standardized referral intake formats and communication protocols so clinical and community partners can exchange referral information efficiently through referral management platforms.'
+        ]
+      },
+      {
+        num:'2.3', title:'Continuous learning and system improvement',
+        core:[
+          'Develop shared referral outcome metrics and cross-sector feedback mechanisms that allow healthcare organizations, CBOs, and public health partners to monitor referral performance and guide system improvement.'
+        ],
+        supporting:[
+          'Establish recurring cross-sector case review and learning forums where partners examine referral experiences and identify opportunities to improve coordination processes.',
+          'Design pilot initiatives as learning infrastructure by embedding shared measures and structured reflection processes that generate implementation insights.',
+          'Develop cross-sector dashboards, reports, and learning reviews that enable partners to monitor performance even when operating on different technology platforms.'
+        ]
+      }
+    ]
+  },
+  {
+    id:'p3', cls:'p3', num:'PD 3',
+    title:'Referral navigation ownership and infrastructure',
+    desc:'Establish clear ownership, staffing models, and coordination infrastructure so that individuals reliably move from screening to completed services.',
+    sds:[
+      {
+        num:'3.1', title:'Clear ownership of referral navigation',
+        core:[
+          'Structure referral accountability protocols that designate navigators responsible for follow-up and coordination so individuals who screen positive for ADRD risk consistently move from screening to action.',
+          'Design coordination models that support dedicated navigator roles with clear responsibility for assessment, triage, and follow-up across healthcare and community partners.'
+        ],
+        supporting:[
+          'Ensure that screening results trigger documented follow-up across both clinical and community systems so individuals do not stall between identification, referral, and service connection.',
+          'Clarify and sustain responsibility for referral initiation and follow-up across partners, including embedded referral coordinators or care navigators in primary care and specialty clinics.'
+        ]
+      },
+      {
+        num:'3.2', title:'Network-based navigation infrastructure',
+        core:[
+          'Design network-based coordination models that serve as central navigation points connecting healthcare providers, CBOs, and social service partners.',
+          'Establish centralized referral intake and triage functions that route referrals to appropriate community services.',
+          'Establish regional or network-level care navigation hubs that coordinate referrals between healthcare providers and community organizations.'
+        ],
+        supporting:[
+          'Coordinate warm handoffs and track referral follow-up so individuals and caregivers do not become lost between healthcare and community systems.',
+          'Connect clinical services, caregiver supports, and social services into coordinated ecosystems that support people living with cognitive concerns.',
+          'Promote co-location or embedded service models that bring clinical and community services together in shared settings.'
+        ]
+      },
+      {
+        num:'3.3', title:'Clinical workflow integration',
+        core:[
+          'Develop standardized referral trigger protocols embedded within clinical workflows so that ADRD screening results or other clinical events automatically initiate appropriate referral pathways.'
+        ],
+        supporting:[
+          'Design coordination processes so they are embedded within existing clinical and community workflows rather than functioning as additional tasks.',
+          'Incorporate screening results into routine care follow-up in both clinical and community settings.',
+          'Develop shared longitudinal care planning approaches that allow healthcare and community partners to coordinate services over time.',
+          'Adopt standardized patient and caregiver assessment measures that guide referral decisions.',
+          'Develop patient and caregiver engagement protocols that explain referral pathways and support navigation.'
+        ]
+      },
+      {
+        num:'3.4', title:'Referral tracking and visibility systems',
+        core:[
+          'Implement standardized referral tracking systems, operational dashboards, and reporting tools that provide shared visibility across clinical and community partners.'
+        ],
+        supporting:[
+          'Design operational feedback loops that help partners use referral data to identify stalled referrals and improve follow-up performance.',
+          'Automate referral processes where appropriate while preserving flexibility for different provider workflows.',
+          'Develop standardized referral intake formats and communication protocols across partners.'
+        ]
+      }
+    ]
+  },
+  {
+    id:'p4', cls:'p4', num:'PD 4',
+    title:'Sustainable financing and incentive alignment',
+    desc:'Align payment models, funding streams, and performance measures so that referral coordination and navigation become financially sustainable.',
+    sds:[
+      {
+        num:'4.1', title:'Incentives for referral completion',
+        core:[
+          'Incorporate ADRD screening, referral completion, and follow-up into clinical quality measures tied to Medicare and Medicaid benefits.',
+          'Create performance-based incentive models that reward documented referral completion and service connection.'
+        ],
+        supporting:[
+          'Encourage health plans and payers to reward collaboration between healthcare organizations and CBOs through value-based payment models.',
+          'Create incentives for completed bidirectional referrals so both referring and receiving partners are rewarded for follow-through.'
+        ]
+      },
+      {
+        num:'4.2', title:'Financing coordination infrastructure',
+        core:[
+          'Develop reimbursement mechanisms, including use of existing care coordination and navigation billing codes (e.g., Medicare Community Health Improvement (CHI) and Principal Illness Navigation (PIN) codes) or other payment models, that support time spent on preventive brain health screening, referral coordination, and cross-sector communication so risk reduction and navigation activities are financially sustainable.',
+          'Match funding responsibility with financial benefit through shared savings or shared revenue models.'
+        ],
+        supporting:[
+          'Tie qualitative and quantitative outcome measures to financial value.',
+          'Conduct pilot evaluations demonstrating cost savings and return on investment.',
+          'Support structured learning collaboratives between CBOs and payers.'
+        ]
+      },
+      {
+        num:'4.3', title:'Braided and aligned funding streams',
+        core:[
+          'Braid funding streams across programs and conditions to support referral coordination infrastructure.',
+          'Align funding mechanisms, reporting requirements, and performance measures across programs addressing shared risk factors.'
+        ],
+        supporting:[
+          'Incorporate infrastructure costs such as workforce training, outreach staffing, and referral technology into core funding models.',
+          'Encourage payer-driven service braiding models that allow multiple prevention and support services to be bundled for beneficiaries.'
+        ]
+      },
+      {
+        num:'4.4', title:'Policy and regulatory alignment',
+        core:[
+          'Align and articulate public health roles within major health system transformation initiatives.'
+        ],
+        supporting:[
+          'Provide recommendations for policy changes supporting referrals to community-based services.',
+          'Address compliance concerns and regulatory barriers that limit cross-sector participation.',
+          'Leverage Community Health Needs Assessments to support community–clinical linkages.'
+        ]
+      }
+    ]
+  },
+  {
+    id:'p5', cls:'p5', num:'PD 5',
+    title:'Shared service and community participation infrastructure',
+    desc:'Enable organizations with varying staffing, technology, and infrastructure capacity to participate reliably in referral systems.',
+    sds:[
+      {
+        num:'5.1', title:'Tiered participation pathways',
+        core:[
+          'Design tiered participation pathways that allow organizations to engage in referral systems using approaches appropriate to their staffing, technology, and operational capacity.'
+        ],
+        supporting:[
+          'Enable simplified workflows and shared supports so smaller CBOs can participate reliably.',
+          'Define readiness expectations and minimum participation standards.'
+        ]
+      },
+      {
+        num:'5.2', title:'Shared service hubs',
+        core:[
+          'Develop shared service hubs that provide technology, training, compliance support, and coordination infrastructure.',
+          'Encourage participation of CBOs through Community Care Hubs or umbrella hub models.'
+        ],
+        supporting:[
+          'Provide centralized onboarding and technical assistance for organizations joining referral networks.',
+          'Partner with organizations that track Community Information Exchange and Community Care Hub infrastructure landscapes.'
+        ]
+      },
+      {
+        num:'5.3', title:'Community capacity infrastructure',
+        core:[
+          'Conduct asset mapping and gap analyses of CBOs, referral networks, and service infrastructure.'
+        ],
+        supporting:[
+          'Provide mini-grants or infrastructure stipends to support participation.',
+          'Provide technical assistance to increase readiness.',
+          'Conduct readiness assessments for organizations interested in participating.'
+        ]
+      },
+      {
+        num:'5.4', title:'Workforce integration',
+        core:[
+          'Crosstrain and deploy health educators, community health workers, nurses, social workers, and other trusted workforce roles to deliver brain health education and support referral navigation.',
+          'Integrate brain health into chronic disease and primary care prevention frameworks.'
+        ],
+        supporting:[
+          'Train public health practitioners to incorporate brain health across the lifespan.',
+          'Expand specialized workforce models such as State Quality Specialists.',
+          'Frame brain health and dementia risk reduction as part of chronic disease prevention messaging.'
+        ]
+      }
+    ]
+  }
+];
+
+function toggle(pdId, sdKey) {
+  if (sdKey) {
+    const body = document.getElementById(sdKey + '-body');
+    const chev = document.getElementById(sdKey + '-chev');
+    const open = body.classList.toggle('open');
+    chev.classList.toggle('open', open);
+  } else {
+    const body = document.getElementById(pdId + '-body');
+    const chev = document.getElementById(pdId + '-chev');
+    const open = body.classList.toggle('open');
+    chev.classList.toggle('open', open);
+  }
+}
+
+function expandAll() {
+  document.querySelectorAll('.pd-body, .sd-body').forEach(el => el.classList.add('open'));
+  document.querySelectorAll('.pd-chevron, .sd-chevron').forEach(el => el.classList.add('open'));
+}
+
+function collapseAll() {
+  document.querySelectorAll('.pd-body, .sd-body').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.pd-chevron, .sd-chevron').forEach(el => el.classList.remove('open'));
+}
+
+function render() {
+  let html = '';
+  data.forEach(pd => {
+    const sdCount = pd.sds.length;
+    const coreCount = pd.sds.reduce((a, s) => a + s.core.length, 0);
+    html += `<div class="pd-block ${pd.cls}">
+      <button class="pd-header" onclick="toggle('${pd.id}')">
+        <span class="pd-badge">${pd.num}</span>
+        <span class="pd-title">${pd.title}</span>
+        <span class="pd-count">${sdCount} secondary drivers</span>
+        <span class="pd-chevron" id="${pd.id}-chev">▶</span>
+      </button>
+      <div class="pd-body" id="${pd.id}-body">
+        <p class="pd-desc">${pd.desc}</p>`;
+
+    pd.sds.forEach(sd => {
+      const sdKey = `${pd.id}-sd-${sd.num.replace('.', '_')}`;
+      html += `<div class="sd-block">
+        <button class="sd-header" onclick="toggle('${pd.id}','${sdKey}')">
+          <span class="sd-num">${sd.num}</span>
+          <span class="sd-title">${sd.title}</span>
+          <span class="sd-chevron" id="${sdKey}-chev">▶</span>
+        </button>
+        <div class="sd-body" id="${sdKey}-body">
+          <div class="act-section">
+            <div class="act-label">Core system activities</div>
+            ${sd.core.map(a => `<div class="act-item">${a}</div>`).join('')}
+          </div>
+          ${sd.supporting && sd.supporting.length ? `<div class="act-section">
+            <div class="act-label">Supporting implementation activities</div>
+            ${sd.supporting.map(a => `<div class="act-item supporting">${a}</div>`).join('')}
+          </div>` : ''}
+        </div>
+      </div>`;
+    });
+
+    html += `</div></div>`;
+  });
+  document.getElementById('diagram').innerHTML = html;
+}
+
+render();
+</script>
+</body>
+</html>
+```
+
+\`\`\`

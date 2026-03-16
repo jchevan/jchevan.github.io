@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "driverdiagram.html",
+    "href": "driverdiagram.html",
+    "title": "ADRD Driver Diagram",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Evidence-Based Brain Health System Framework — Key Driver Diagram\n\n\n\n\n\n  Evidence-based brain health system framework\n  Key Driver Diagram\n\n\n\n\n  \n    Aim statement\n    Adults—beginning in midlife—experience equitable, timely, and coordinated cycles of risk identification, early detection, follow-up, and action because evidence-informed brain health approaches are embedded within existing systems, supported by clearly defined and reliable community–clinical linkages, and actively stewarded by public health to maintain alignment and continuity across partners.\n  \n\n  \n    5Primary drivers\n    \n    16Secondary drivers\n    \n    24Core activities\n    \n    70Supporting activities\n  \n\n  \n    Key:\n    PD 1 — Governance\n    PD 2 — Data & learning\n    PD 3 — Navigation\n    PD 4 — Financing\n    PD 5 — Community capacity\n    Supporting activities\n  \n\n  \n    Expand all\n    Collapse all\n    Print / Save PDF\n  \n\n  \n\n\n\n\n\n\n```"
   },
   {
     "objectID": "index.html",
@@ -12,5 +12,12 @@
     "title": "JChev",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
