@@ -1,11 +1,10 @@
 ---
-title: "Julia Chevan, PT, DPT, PhD, MPH"
+title: "Julia Chevan"
 about:
   template: solana
   image: images/JuliaChevan.png
   links:
-    - icon: mortarboard
-      text: ORCID
+    - text: "{{< ai orcid >}} ORCID"
       href: https://orcid.org/0000-0002-3044-4070
     - icon: linkedin
       text: LinkedIn
@@ -15,8 +14,10 @@ about:
       href: mailto:jchevan@springfieldcollege.edu
 ---
 
-I am a physical therapist, health services researcher, and public health practitioner with 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. 
+<center>**Julia Chevan, PT, DPT, PhD, MPH**</center>
 
-Currently I serve as Senior Program Manager with the National Association of Chronic Disease Directors. My day-to-day work focuses on building the evidence for clinical-community partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2025, I will be joining the Clinical Research PhD Program at the University of Jamestown as faculty.
+Hi, I am Julia and I am a physical therapist, health services researcher, and public health practitioner with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. 
+
+Currently I serve as Senior Program Manager with the National Association of Chronic Disease Directors. My day-to-day work focuses on building the evidence for clinical-community partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2025, I will be joining the Clinical Research PhD Program at the University of Jamestown as faculty.
 
 To learn more about building your Quarto website visit <https://quarto.org/docs/websites>.
