@@ -4,16 +4,22 @@ project:
 
 website:
   title: "JChev"
-  navbar:
-    left:
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
       - href: index.qmd
         text: Home
+        icon: bi-house
       - href: cv.qmd
         text: CV
+        icon: bi-file-person
       - href: projects.qmd
         text: Projects
+        icon: bi-list
       - href: driverdiagram.qmd
         text: ADRD Driver Diagram
+        icon: bi-grid-1x2
 
 format:
   html:

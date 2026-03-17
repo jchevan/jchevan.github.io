@@ -1,8 +1,10 @@
 ---
 title: "Julia Chevan"
+subtitle: "PT, DPT, PhD, MPH"
 about:
   template: trestles
-  image: images/JuliaChevanOval.png
+  image-shape: round
+  image: images/JuliaChevan.png
   links:
     - text: "{{< ai orcid >}} ORCID"
       href: https://orcid.org/0000-0002-3044-4070
@@ -17,12 +19,6 @@ about:
       href: mailto:jchevan@springfieldcollege.edu
 ---
 
-<center>**Julia Chevan, PT, DPT, PhD, MPH**</center>
+Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. 
 
-|          |          |
-|----------|---------:|
-| 🟢 🟡 🔴 | 🔴 🟡 🟢 |
-
-Hi, I am Julia and I am a physical therapist, health services researcher, and public health practitioner with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. 
-
-Currently I serve as Senior Program Manager with the [National Association of Chronic Disease Directors](https://chronicdisease.org). My day-to-day work focuses on building the evidence for clinical-community partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2026, I will be joining the [Clinical Research PhD Program](https://accelerated.uj.edu/academics/programs/clinical-research/) at the University of Jamestown as faculty.
+Currently I serve as Senior Program Manager with the [National Association of Chronic Disease Directors](https://chronicdisease.org). My day-to-day work focuses on building models for community-clinical partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2026, I will be joining the [Clinical Research PhD Program](https://accelerated.uj.edu/academics/programs/clinical-research/) at the University of Jamestown as faculty.
