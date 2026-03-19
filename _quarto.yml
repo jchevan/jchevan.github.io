@@ -5,6 +5,7 @@ project:
 website:
   title: "JChev"
   sidebar:
+    logo: images/JCLogoBl.png
     style: "docked"
     search: true
     contents:
