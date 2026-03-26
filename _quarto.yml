@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - static/h5p-test.html
+    - h5p/
 
 website:
   title: "JChev"
@@ -21,6 +24,9 @@ website:
       - href: driverdiagram.qmd
         text: ADRD Driver Diagram
         icon: bi-grid-1x2
+      - href: static/h5p-test.html
+        text: H5P Timeline
+        icon: bi-arrow-clockwise
 
 format:
   html:

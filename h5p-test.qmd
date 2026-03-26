@@ -1,0 +1,21 @@
+---
+title: "H5P-Test"
+format: html
+---
+```{=html}
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const options = {
+      h5pJsonPath: 'h5p/Timeline',
+      frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/frame.bundle.js',
+      frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css',
+    };
+    const el = document.getElementById('h5p-container');
+    new H5PStandalone.H5P(el, options);
+  });
+```

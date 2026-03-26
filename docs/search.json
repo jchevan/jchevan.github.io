@@ -10,14 +10,11 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Julia Chevan",
+    "objectID": "h5p-test.html",
+    "href": "h5p-test.html",
+    "title": "H5P-Test",
     "section": "",
-    "text": "Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. \nCurrently I serve as Senior Program Manager with the National Association of Chronic Disease Directors. My day-to-day work focuses on building models for community-clinical partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2026, I will be joining the Clinical Research PhD Program at the University of Jamestown as faculty.",
-    "crumbs": [
-      "Home"
-    ]
+    "text": "document.addEventListener('DOMContentLoaded', function () {\n    const options = {\n      h5pJsonPath: 'h5p/Timeline',\n      frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/frame.bundle.js',\n      frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css',\n    };\n    const el = document.getElementById('h5p-container');\n    new H5PStandalone.H5P(el, options);\n  });"
   },
   {
     "objectID": "projects.html",
@@ -47,6 +44,16 @@
     "text": "Other Projects\n\nArthritis Care Model\nThis is part of the work I am doing with NACDD.\n\n\nInformatics and Data Standardization",
     "crumbs": [
       "Projects"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Julia Chevan",
+    "section": "",
+    "text": "Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. \nCurrently I serve as Senior Program Manager with the National Association of Chronic Disease Directors. My day-to-day work focuses on building models for community-clinical partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions. In July 2026, I will be joining the Clinical Research PhD Program at the University of Jamestown as faculty.",
+    "crumbs": [
+      "Home"
     ]
   },
   {
