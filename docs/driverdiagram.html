@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>ADRD Driver Diagram – JChev</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4d8b594121dd52e54118692cc759f5c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-afa47df0b9d33c5abd1bced1eaab4b8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -138,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./static/h5p-test.html" class="sidebar-item-text sidebar-link"><i class="bi bi-arrow-clockwise" role="img">
+  <a href="./static/h5p-test.html" class="sidebar-item-text sidebar-link" target="_blank"><i class="bi bi-arrow-clockwise" role="img">
 </i> 
  <span class="menu-text">H5P Timeline</span></a>
   </div>
@@ -176,779 +178,162 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evidence-Based Brain Health System Framework — Key Driver Diagram</title>
+<title>ADRD Community-Clinical Linkages Framework — Key Driver Diagram</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --blue-50: #E6F1FB; --blue-100: #B5D4F4; --blue-200: #85B7EB;
-    --blue-600: #185FA5; --blue-800: #0C447C; --blue-900: #042C53;
-    --green-50: #EAF3DE; --green-100: #C0DD97; --green-200: #97C459;
-    --green-600: #3B6D11; --green-800: #27500A; --green-900: #173404;
-    --amber-50: #FAEEDA; --amber-100: #FAC775; --amber-200: #EF9F27;
-    --amber-600: #854F0B; --amber-800: #633806; --amber-900: #412402;
-    --pink-50: #FBEAF0; --pink-100: #F4C0D1; --pink-200: #ED93B1;
-    --pink-600: #993556; --pink-800: #72243E; --pink-900: #4B1528;
-    --purple-50: #EEEDFE; --purple-100: #CECBF6; --purple-200: #AFA9EC;
-    --purple-600: #534AB7; --purple-800: #3C3489; --purple-900: #26215C;
+    --blue-50:#E6F1FB;--blue-100:#B5D4F4;--blue-200:#85B7EB;--blue-600:#185FA5;--blue-800:#0C447C;--blue-900:#042C53;
+    --green-50:#EAF3DE;--green-100:#C0DD97;--green-200:#97C459;--green-600:#3B6D11;--green-800:#27500A;--green-900:#173404;
+    --amber-50:#FAEEDA;--amber-100:#FAC775;--amber-200:#EF9F27;--amber-600:#854F0B;--amber-800:#633806;--amber-900:#412402;
+    --pink-50:#FBEAF0;--pink-100:#F4C0D1;--pink-200:#ED93B1;--pink-600:#993556;--pink-800:#72243E;--pink-900:#4B1528;
+    --purple-50:#EEEDFE;--purple-100:#CECBF6;--purple-200:#AFA9EC;--purple-600:#534AB7;--purple-800:#3C3489;--purple-900:#26215C;
+    --teal-50:#E0F5F1;--teal-100:#A8DDD5;--teal-200:#5CBFB3;--teal-600:#1D7A6E;--teal-800:#155A50;--teal-900:#0D3C35;
   }
-
-  body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    background: #fff;
-    color: #1a1a1a;
-    min-height: 100vh;
-    padding: 0;
-  }
-
-  .page-header {
-    background: #0f0f0f;
-    color: #fff;
-    padding: 32px 40px 28px;
-    border-bottom: 3px solid #1a1a1a;
-  }
-
-  .page-header h1 {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: -.01em;
-    line-height: 1.3;
-    margin-bottom: 6px;
-    color: #fff;
-  }
-
-  .page-header .subtitle {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: rgba(255,255,255,.45);
-    letter-spacing: .06em;
-    text-transform: uppercase;
-  }
-
-  .main {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 32px 32px 60px;
-  }
-
-  .aim-box {
-    background: #0f0f0f;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px 24px;
-    margin-bottom: 24px;
-  }
-
-  .aim-box .aim-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,.45);
-    margin-bottom: 8px;
-  }
-
-  .aim-box p {
-    font-size: 13px;
-    line-height: 1.7;
-    color: rgba(255,255,255,.88);
-  }
-
-  .legend {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    margin-bottom: 24px;
-    padding: 14px 18px;
-    background: #f5f5f2;
-    border-radius: 8px;
-    border: 1px solid rgba(0,0,0,.07);
-    align-items: center;
-  }
-
-  .legend-title {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: #888;
-    margin-right: 4px;
-  }
-
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11.5px;
-    color: #444;
-  }
-
-  .legend-dot {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  .legend-dash {
-    width: 18px;
-    height: 0;
-    border-top: 2px dashed #bbb;
-    flex-shrink: 0;
-  }
-
-  /* Primary driver blocks */
-  .pd-block {
-    margin-bottom: 12px;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,.08);
-  }
-
-  .pd-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 15px 18px;
-    cursor: pointer;
-    user-select: none;
-    transition: filter .15s;
-    border: none;
-    width: 100%;
-    text-align: left;
-  }
-
-  .pd-header:hover { filter: brightness(.97); }
-
-  .pd-badge {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: .07em;
-    padding: 3px 8px;
-    border-radius: 4px;
-    flex-shrink: 0;
-    white-space: nowrap;
-  }
-
-  .pd-title {
-    font-size: 14px;
-    font-weight: 600;
-    flex: 1;
-    line-height: 1.35;
-  }
-
-  .pd-count {
-    font-size: 11px;
-    opacity: .5;
-    flex-shrink: 0;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  .pd-chevron {
-    font-size: 10px;
-    opacity: .5;
-    flex-shrink: 0;
-    transition: transform .2s;
-    margin-left: 4px;
-  }
-
-  .pd-chevron.open { transform: rotate(90deg); }
-
-  .pd-body { display: none; padding: 0 12px 12px; }
-  .pd-body.open { display: block; }
-
-  .pd-desc {
-    font-size: 12px;
-    line-height: 1.65;
-    color: #555;
-    padding: 10px 12px 8px;
-    border-left: 3px solid rgba(0,0,0,.1);
-    margin: 4px 0 8px;
-  }
-
-  /* Secondary driver blocks */
-  .sd-block {
-    margin-bottom: 6px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,.08);
-  }
-
-  .sd-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 11px 14px;
-    cursor: pointer;
-    user-select: none;
-    transition: filter .15s;
-    border: none;
-    width: 100%;
-    text-align: left;
-  }
-
-  .sd-header:hover { filter: brightness(.97); }
-
-  .sd-num {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    font-weight: 500;
-    opacity: .6;
-    min-width: 28px;
-    flex-shrink: 0;
-  }
-
-  .sd-title {
-    font-size: 13px;
-    font-weight: 500;
-    flex: 1;
-    line-height: 1.3;
-  }
-
-  .sd-chevron {
-    font-size: 10px;
-    opacity: .45;
-    transition: transform .2s;
-    flex-shrink: 0;
-  }
-
-  .sd-chevron.open { transform: rotate(90deg); }
-
-  .sd-body { display: none; padding: 10px 14px 14px; background: rgba(255,255,255,.7); }
-  .sd-body.open { display: block; }
-
-  .act-section { margin-bottom: 10px; }
-  .act-section:last-child { margin-bottom: 0; }
-
-  .act-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 9.5px;
-    font-weight: 500;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-
-  .act-item {
-    font-size: 12px;
-    line-height: 1.6;
-    padding: 6px 0 6px 14px;
-    border-left: 2.5px solid rgba(0,0,0,.15);
-    margin-bottom: 5px;
-    color: #2a2a2a;
-  }
-
-  .act-item.supporting {
-    border-left-style: dashed;
-    color: #444;
-  }
-
-  /* PD color themes */
-  .p1 .pd-header { background: var(--blue-50); }
-  .p1 .pd-title { color: var(--blue-900); }
-  .p1 .pd-badge { background: var(--blue-100); color: var(--blue-800); }
-  .p1 .pd-count { color: var(--blue-600); }
-  .p1 .pd-chevron { color: var(--blue-800); }
-  .p1 .pd-desc { border-left-color: var(--blue-200); }
-  .p1 .sd-header { background: #f0f7fd; }
-  .p1 .sd-num { color: var(--blue-600); }
-  .p1 .sd-title { color: var(--blue-900); }
-  .p1 .sd-chevron { color: var(--blue-600); }
-  .p1 .act-label { color: var(--blue-600); }
-  .p1 .act-item { border-left-color: var(--blue-200); }
-
-  .p2 .pd-header { background: var(--green-50); }
-  .p2 .pd-title { color: var(--green-900); }
-  .p2 .pd-badge { background: var(--green-100); color: var(--green-800); }
-  .p2 .pd-count { color: var(--green-600); }
-  .p2 .pd-chevron { color: var(--green-800); }
-  .p2 .pd-desc { border-left-color: var(--green-200); }
-  .p2 .sd-header { background: #f1f8e8; }
-  .p2 .sd-num { color: var(--green-600); }
-  .p2 .sd-title { color: var(--green-900); }
-  .p2 .sd-chevron { color: var(--green-600); }
-  .p2 .act-label { color: var(--green-600); }
-  .p2 .act-item { border-left-color: var(--green-200); }
-
-  .p3 .pd-header { background: var(--amber-50); }
-  .p3 .pd-title { color: var(--amber-900); }
-  .p3 .pd-badge { background: var(--amber-100); color: var(--amber-800); }
-  .p3 .pd-count { color: var(--amber-600); }
-  .p3 .pd-chevron { color: var(--amber-800); }
-  .p3 .pd-desc { border-left-color: var(--amber-200); }
-  .p3 .sd-header { background: #fdf5e8; }
-  .p3 .sd-num { color: var(--amber-600); }
-  .p3 .sd-title { color: var(--amber-900); }
-  .p3 .sd-chevron { color: var(--amber-600); }
-  .p3 .act-label { color: var(--amber-600); }
-  .p3 .act-item { border-left-color: var(--amber-200); }
-
-  .p4 .pd-header { background: var(--pink-50); }
-  .p4 .pd-title { color: var(--pink-900); }
-  .p4 .pd-badge { background: var(--pink-100); color: var(--pink-800); }
-  .p4 .pd-count { color: var(--pink-600); }
-  .p4 .pd-chevron { color: var(--pink-800); }
-  .p4 .pd-desc { border-left-color: var(--pink-200); }
-  .p4 .sd-header { background: #fdf1f6; }
-  .p4 .sd-num { color: var(--pink-600); }
-  .p4 .sd-title { color: var(--pink-900); }
-  .p4 .sd-chevron { color: var(--pink-600); }
-  .p4 .act-label { color: var(--pink-600); }
-  .p4 .act-item { border-left-color: var(--pink-200); }
-
-  .p5 .pd-header { background: var(--purple-50); }
-  .p5 .pd-title { color: var(--purple-900); }
-  .p5 .pd-badge { background: var(--purple-100); color: var(--purple-800); }
-  .p5 .pd-count { color: var(--purple-600); }
-  .p5 .pd-chevron { color: var(--purple-800); }
-  .p5 .pd-desc { border-left-color: var(--purple-200); }
-  .p5 .sd-header { background: #f4f3fe; }
-  .p5 .sd-num { color: var(--purple-600); }
-  .p5 .sd-title { color: var(--purple-900); }
-  .p5 .sd-chevron { color: var(--purple-600); }
-  .p5 .act-label { color: var(--purple-600); }
-  .p5 .act-item { border-left-color: var(--purple-200); }
-
-  .controls {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-
-  .ctrl-btn {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    padding: 7px 14px;
-    border-radius: 6px;
-    border: 1px solid rgba(0,0,0,.15);
-    background: #fff;
-    cursor: pointer;
-    color: #333;
-    letter-spacing: .04em;
-    transition: background .12s, border-color .12s;
-  }
-
-  .ctrl-btn:hover { background: #f5f5f2; border-color: rgba(0,0,0,.25); }
-
-  .stats-bar {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-
-  .stat {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .stat-num {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 22px;
-    font-weight: 500;
-    color: #0f0f0f;
-    line-height: 1;
-  }
-
-  .stat-label {
-    font-size: 11px;
-    color: #888;
-    letter-spacing: .03em;
-  }
-
-  .stat-divider {
-    width: 1px;
-    background: rgba(0,0,0,.1);
-    align-self: stretch;
-    margin: 2px 0;
-  }
-
-  @media print {
-    .controls { display: none; }
-    .pd-body, .sd-body { display: block !important; }
-  }
+  body { font-family:'IBM Plex Sans',sans-serif; background:#fff; color:#1a1a1a; min-height:100vh; padding:0; }
+  .page-header { background:#0f0f0f; color:#fff; padding:32px 40px 28px; border-bottom:3px solid #1a1a1a; }
+  .page-header h1 { font-size:18px; font-weight:600; letter-spacing:-.01em; line-height:1.3; margin-bottom:6px; color:#fff; }
+  .page-header .subtitle { font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.45); letter-spacing:.06em; text-transform:uppercase; }
+  .main { max-width:860px; margin:0 auto; padding:32px 32px 60px; }
+  .aim-box { background:#0f0f0f; color:#fff; border-radius:10px; padding:20px 24px; margin-bottom:24px; }
+  .aim-box .aim-label { font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.45); margin-bottom:8px; }
+  .aim-box p { font-size:13px; line-height:1.7; color:rgba(255,255,255,.88); }
+  .legend { display:flex; flex-wrap:wrap; gap:10px 20px; margin-bottom:24px; padding:14px 18px; background:#f5f5f2; border-radius:8px; border:1px solid rgba(0,0,0,.07); align-items:center; }
+  .legend-title { font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#888; margin-right:4px; }
+  .legend-item { display:flex; align-items:center; gap:6px; font-size:11.5px; color:#444; }
+  .legend-dot { width:11px; height:11px; border-radius:50%; flex-shrink:0; }
+  .legend-dash { width:18px; height:0; border-top:2px dashed #bbb; flex-shrink:0; }
+  .pd-block { margin-bottom:12px; border-radius:10px; overflow:hidden; border:1px solid rgba(0,0,0,.08); }
+  .pd-header { display:flex; align-items:center; gap:12px; padding:15px 18px; cursor:pointer; user-select:none; transition:filter .15s; border:none; width:100%; text-align:left; }
+  .pd-header:hover { filter:brightness(.97); }
+  .pd-badge { font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:500; letter-spacing:.07em; padding:3px 8px; border-radius:4px; flex-shrink:0; white-space:nowrap; }
+  .pd-title { font-size:14px; font-weight:600; flex:1; line-height:1.35; }
+  .pd-count { font-size:11px; opacity:.5; flex-shrink:0; font-family:'IBM Plex Mono',monospace; }
+  .pd-chevron { font-size:10px; opacity:.5; flex-shrink:0; transition:transform .2s; margin-left:4px; }
+  .pd-chevron.open { transform:rotate(90deg); }
+  .pd-body { display:none; padding:0 12px 12px; }
+  .pd-body.open { display:block; }
+  .pd-desc { font-size:12px; line-height:1.65; color:#555; padding:10px 12px 8px; border-left:3px solid rgba(0,0,0,.1); margin:4px 0 8px; }
+  .sd-block { margin-bottom:6px; border-radius:8px; overflow:hidden; border:1px solid rgba(0,0,0,.08); }
+  .sd-header { display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer; user-select:none; transition:filter .15s; border:none; width:100%; text-align:left; }
+  .sd-header:hover { filter:brightness(.97); }
+  .sd-num { font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500; opacity:.6; min-width:28px; flex-shrink:0; }
+  .sd-title { font-size:13px; font-weight:500; flex:1; line-height:1.3; }
+  .sd-chevron { font-size:10px; opacity:.45; transition:transform .2s; flex-shrink:0; }
+  .sd-chevron.open { transform:rotate(90deg); }
+  .sd-body { display:none; padding:10px 14px 14px; background:rgba(255,255,255,.7); }
+  .sd-body.open { display:block; }
+  .sd-intent { font-size:11.5px; line-height:1.6; color:#555; font-style:italic; padding:0 0 10px 0; margin-bottom:8px; border-bottom:1px solid rgba(0,0,0,.06); }
+  .special-note { background:#fffbf0; border:1px solid #f0d888; border-left:4px solid #e5a800; border-radius:6px; padding:10px 14px; margin-bottom:12px; font-size:11.5px; line-height:1.65; color:#4a3a00; }
+  .special-note-label { font-family:'IBM Plex Mono',monospace; font-size:9px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:#8a6500; margin-bottom:6px; }
+  .act-section { margin-bottom:10px; }
+  .act-section:last-child { margin-bottom:0; }
+  .act-label { font-family:'IBM Plex Mono',monospace; font-size:9.5px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; margin-bottom:6px; }
+  .act-item { font-size:12px; line-height:1.6; padding:6px 0 6px 14px; border-left:2.5px solid rgba(0,0,0,.15); margin-bottom:5px; color:#2a2a2a; }
+  .act-item.supporting { border-left-style:dashed; color:#444; }
+  .eval-block { margin-top:12px; border-radius:8px; overflow:hidden; border:1px solid rgba(0,0,0,.08); }
+  .eval-header { display:flex; align-items:center; gap:10px; padding:10px 14px; cursor:pointer; user-select:none; border:none; width:100%; text-align:left; background:rgba(0,0,0,.04); }
+  .eval-header:hover { filter:brightness(.97); }
+  .eval-title { font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:500; letter-spacing:.07em; text-transform:uppercase; flex:1; color:#555; }
+  .eval-chevron { font-size:10px; opacity:.4; transition:transform .2s; }
+  .eval-chevron.open { transform:rotate(90deg); }
+  .eval-body { display:none; padding:12px 14px 14px; background:#fafaf8; }
+  .eval-body.open { display:block; }
+  .eval-section { margin-bottom:12px; }
+  .eval-section:last-child { margin-bottom:0; }
+  .eval-section-label { font-family:'IBM Plex Mono',monospace; font-size:9px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:#888; margin-bottom:6px; }
+  .eval-item { font-size:11.5px; line-height:1.6; padding:4px 0 4px 12px; border-left:2px solid rgba(0,0,0,.1); margin-bottom:4px; color:#444; }
+  .eval-sub-label { font-size:11px; font-weight:600; color:#555; margin:8px 0 4px 0; }
+  .p1 .pd-header{background:var(--blue-50)} .p1 .pd-title{color:var(--blue-900)} .p1 .pd-badge{background:var(--blue-100);color:var(--blue-800)} .p1 .pd-count{color:var(--blue-600)} .p1 .pd-chevron{color:var(--blue-800)} .p1 .pd-desc{border-left-color:var(--blue-200)} .p1 .sd-header{background:#f0f7fd} .p1 .sd-num{color:var(--blue-600)} .p1 .sd-title{color:var(--blue-900)} .p1 .sd-chevron{color:var(--blue-600)} .p1 .act-label{color:var(--blue-600)} .p1 .act-item{border-left-color:var(--blue-200)}
+  .p2 .pd-header{background:var(--green-50)} .p2 .pd-title{color:var(--green-900)} .p2 .pd-badge{background:var(--green-100);color:var(--green-800)} .p2 .pd-count{color:var(--green-600)} .p2 .pd-chevron{color:var(--green-800)} .p2 .pd-desc{border-left-color:var(--green-200)} .p2 .sd-header{background:#f1f8e8} .p2 .sd-num{color:var(--green-600)} .p2 .sd-title{color:var(--green-900)} .p2 .sd-chevron{color:var(--green-600)} .p2 .act-label{color:var(--green-600)} .p2 .act-item{border-left-color:var(--green-200)}
+  .p3 .pd-header{background:var(--amber-50)} .p3 .pd-title{color:var(--amber-900)} .p3 .pd-badge{background:var(--amber-100);color:var(--amber-800)} .p3 .pd-count{color:var(--amber-600)} .p3 .pd-chevron{color:var(--amber-800)} .p3 .pd-desc{border-left-color:var(--amber-200)} .p3 .sd-header{background:#fdf5e8} .p3 .sd-num{color:var(--amber-600)} .p3 .sd-title{color:var(--amber-900)} .p3 .sd-chevron{color:var(--amber-600)} .p3 .act-label{color:var(--amber-600)} .p3 .act-item{border-left-color:var(--amber-200)}
+  .p4 .pd-header{background:var(--pink-50)} .p4 .pd-title{color:var(--pink-900)} .p4 .pd-badge{background:var(--pink-100);color:var(--pink-800)} .p4 .pd-count{color:var(--pink-600)} .p4 .pd-chevron{color:var(--pink-800)} .p4 .pd-desc{border-left-color:var(--pink-200)} .p4 .sd-header{background:#fdf1f6} .p4 .sd-num{color:var(--pink-600)} .p4 .sd-title{color:var(--pink-900)} .p4 .sd-chevron{color:var(--pink-600)} .p4 .act-label{color:var(--pink-600)} .p4 .act-item{border-left-color:var(--pink-200)}
+  .p5 .pd-header{background:var(--purple-50)} .p5 .pd-title{color:var(--purple-900)} .p5 .pd-badge{background:var(--purple-100);color:var(--purple-800)} .p5 .pd-count{color:var(--purple-600)} .p5 .pd-chevron{color:var(--purple-800)} .p5 .pd-desc{border-left-color:var(--purple-200)} .p5 .sd-header{background:#f4f3fe} .p5 .sd-num{color:var(--purple-600)} .p5 .sd-title{color:var(--purple-900)} .p5 .sd-chevron{color:var(--purple-600)} .p5 .act-label{color:var(--purple-600)} .p5 .act-item{border-left-color:var(--purple-200)}
+  .p6 .pd-header{background:var(--teal-50)} .p6 .pd-title{color:var(--teal-900)} .p6 .pd-badge{background:var(--teal-100);color:var(--teal-800)} .p6 .pd-count{color:var(--teal-600)} .p6 .pd-chevron{color:var(--teal-800)} .p6 .pd-desc{border-left-color:var(--teal-200)} .p6 .sd-header{background:#edf9f7} .p6 .sd-num{color:var(--teal-600)} .p6 .sd-title{color:var(--teal-900)} .p6 .sd-chevron{color:var(--teal-600)} .p6 .act-label{color:var(--teal-600)} .p6 .act-item{border-left-color:var(--teal-200)}
+  .controls { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  .ctrl-btn { font-family:'IBM Plex Mono',monospace; font-size:11px; padding:7px 14px; border-radius:6px; border:1px solid rgba(0,0,0,.15); background:#fff; cursor:pointer; color:#333; letter-spacing:.04em; transition:background .12s,border-color .12s; }
+  .ctrl-btn:hover { background:#f5f5f2; border-color:rgba(0,0,0,.25); }
+  .stats-bar { display:flex; gap:20px; margin-bottom:20px; flex-wrap:wrap; }
+  .stat { display:flex; flex-direction:column; gap:2px; }
+  .stat-num { font-family:'IBM Plex Mono',monospace; font-size:22px; font-weight:500; color:#0f0f0f; line-height:1; }
+  .stat-label { font-size:11px; color:#888; letter-spacing:.03em; }
+  .stat-divider { width:1px; background:rgba(0,0,0,.1); align-self:stretch; margin:2px 0; }
+  @media print { .controls{display:none} .pd-body,.sd-body,.eval-body{display:block!important} }
 </style>
 
 
-
 <div class="page-header">
-  <div class="subtitle">Evidence-based brain health system framework</div>
-  <h1>Key Driver Diagram</h1>
+  <div class="subtitle">Draft · Alzheimer's disease &amp; related dementias · community-clinical linkages framework</div>
+  <h1>Key Driver Diagram — v9</h1>
 </div>
-
 <div class="main">
-
   <div class="aim-box">
     <div class="aim-label">Aim statement</div>
-    <p>Adults—beginning in midlife—experience equitable, timely, and coordinated cycles of risk identification, early detection, follow-up, and action because evidence-informed brain health approaches are embedded within existing systems, supported by clearly defined and reliable community–clinical linkages, and actively stewarded by public health to maintain alignment and continuity across partners.</p>
+    <p>Adults beginning in midlife are connected with a brain health cascade of care—risk identification, risk reduction, screening, early detection, follow-up, and action—supported by public health's role in embedding brain health across existing prevention and care systems and stewarding community–clinical linkages.</p>
   </div>
-
   <div class="stats-bar">
-    <div class="stat"><span class="stat-num">5</span><span class="stat-label">Primary drivers</span></div>
+    <div class="stat"><span class="stat-num">6</span><span class="stat-label">Primary drivers</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">16</span><span class="stat-label">Secondary drivers</span></div>
+    <div class="stat"><span class="stat-num">20</span><span class="stat-label">Secondary drivers</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">29</span><span class="stat-label">Core activities</span></div>
+    <div class="stat"><span class="stat-num">43</span><span class="stat-label">Core activities</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">68</span><span class="stat-label">Supporting activities</span></div>
+    <div class="stat"><span class="stat-num">54</span><span class="stat-label">Supporting activities</span></div>
   </div>
-
   <div class="legend">
     <span class="legend-title">Key:</span>
-    <div class="legend-item"><div class="legend-dot" style="background:#378ADD"></div>PD 1 — Governance</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#639922"></div>PD 2 — Data &amp; learning</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#BA7517"></div>PD 3 — Navigation</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#D4537E"></div>PD 4 — Financing</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#7F77DD"></div>PD 5 — Community capacity</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#378ADD"></div>PD1 — Governance</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#639922"></div>PD2 — Population reach</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#BA7517"></div>PD3 — Data &amp; learning</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#D4537E"></div>PD4 — Navigation</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#7F77DD"></div>PD5 — Financing</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#1D9E8A"></div>PD6 — Community</div>
     <div class="legend-item"><div class="legend-dash"></div>Supporting activities</div>
   </div>
-
   <div class="controls">
     <button class="ctrl-btn" onclick="expandAll()">Expand all</button>
     <button class="ctrl-btn" onclick="collapseAll()">Collapse all</button>
     <button class="ctrl-btn" onclick="window.print()">Print / Save PDF</button>
   </div>
-
   <div id="diagram"></div>
-
 </div>
-
 <script>
-const data = [
-  {
-    id:'p1', cls:'p1', num:'PD 1',
-    title:'Governance and backbone coordination',
-    desc:'Create durable cross-sector governance structures and backbone coordination functions that align public health, healthcare, and community organizations around shared system design, expectations, and improvement processes.',
-    sds:[
-      {
-        num:'1.1', title:'Cross-sector governance infrastructure',
-        core:[
-          'Establish cross-sector governance structures with defined decision authority, partner representation, and mechanisms for setting priorities, resolving disputes, and overseeing referral system design and improvement.',
-          'Define sustainable backbone coordination functions for public health that support cross-sector coordination and system oversight without duplicating clinical or community service delivery.'
-        ],
-        supporting:[
-          'Convene healthcare systems and community-based organizations to define shared goals, sector-specific priorities, and shared impact measures that guide the design of referral systems and coordination processes.',
-          'Leverage the health department\'s neutral convening role so that competing healthcare systems can collaborate and siloed relationships between healthcare organizations and community-based organizations can be reduced.',
-          'Ensure cross-departmental and cross-agency connections among those responsible for improving population health so that brain health, chronic disease prevention, aging services, and community–clinical linkage initiatives are coordinated rather than managed in parallel.',
-          'Establish overarching, non-issue-specific working relationships between public health, healthcare organizations, and community-based organizations so partnerships can be leveraged across multiple initiatives rather than built separately for each program.'
-        ]
-      },
-      {
-        num:'1.2', title:'Shared operational expectations and role clarity',
-        core:[
-          'Align healthcare organizations, community-based organizations, and public health partners around shared expectations for referral management, care coordination, and data exchange, including formal referral accountability agreements that define roles, timelines, and performance expectations across sectors.',
-          'Formalize referral pathways through shared protocols and partner agreements so that referral processes are clearly understood across healthcare and community partners while preserving trust, local adaptation, and operational flexibility.'
-        ],
-        supporting:[
-          'Structure shared responsibility across clinical and community partners so that adults who screen positive for cognitive concerns consistently receive appropriate follow-up, referral response, and connection to supportive services.',
-          'Establish shared expectations for communication and documentation after a referral so that partners know when to re-engage, adjust support, or escalate care.',
-          'Develop cross-sector referral toolkits and operational workflows that guide how healthcare organizations, community-based organizations, and public health partners coordinate screening, referrals, navigation, and follow-up across sectors.',
-          'Develop and disseminate standardized supporting materials—such as defined partner role descriptions, communication templates, and shared guidance for dementia awareness and screening—that enable consistent implementation of cross-sector referral workflows.',
-          'Ensure referral systems are structured so that access to services does not depend on personal relationships within or across organizations.'
-        ]
-      },
-      {
-        num:'1.3', title:'Cross-sector relationship infrastructure',
-        core:[
-          'Establish and sustain structured cross-sector relationship-building processes, including dedicated time, funding, and coordination support, as foundational infrastructure for collaboration among healthcare organizations, community-based organizations, and public health partners.'
-        ],
-        supporting:[
-          'Facilitate relationships and partnerships between healthcare organizations and community-based organizations that align interests, clarify complementary roles, and leverage the strengths of each partner in referral and support pathways.',
-          'Create conditions for cross-sector partners to move from blame toward shared understanding by surfacing operational constraints, differing incentives, and handoff challenges that affect collaboration.',
-          'Identify the values, incentives, and success measures driving each sector in order to surface areas of overlap and inform collaboration strategies that resonate across partners.',
-          'Develop shared resource libraries and stakeholder engagement plans—potentially informed by jurisdictional asset mapping—that help partners understand available programs, referral platforms, and coordination infrastructure operating in the jurisdiction, identify collaboration opportunities, and support coordinated outreach across sectors.'
-        ]
-      }
-    ]
-  },
-  {
-    id:'p2', cls:'p2', num:'PD 2',
-    title:'Shared referral data and learning systems',
-    desc:'Establish interoperable data infrastructure and shared performance frameworks that allow partners to track referrals, monitor outcomes, and continuously improve coordination processes.',
-    sds:[
-      {
-        num:'2.1', title:'Shared data definitions and documentation standards',
-        core:[
-          'Align partners on what data are exchanged, how referral outcomes are defined (including a shared definition of "closed-loop referral"), and how referral information is documented so that participation in bidirectional referral systems is trusted and valued across sectors.',
-          'Develop cross-sector data and documentation standards that support interoperable referral systems, including structured data elements, shared value sets, and common documentation approaches that enable automation and reduce administrative burden.'
-        ],
-        supporting:[
-          'Develop shared metrics and reporting approaches that incorporate both quantitative and qualitative information so that referral data informs action and improvement rather than functioning solely as reporting.',
-          'Define shared goals and impact statements for referral coordination and follow-up that clarify how coordination processes are expected to improve access, service connection, caregiver support, and population health outcomes.'
-        ]
-      },
-      {
-        num:'2.2', title:'Interoperable referral data infrastructure',
-        core:[
-          'Establish interoperability standards that allow multiple referral platforms and data systems to participate in shared referral ecosystems without requiring all partners to adopt the same technology.',
-          'Build bidirectional data systems that integrate with electronic health record systems so that referral information can move reliably between clinical and community partners.'
-        ],
-        supporting:[
-          'Design systems that share referral data in ways that address privacy, compliance, and liability concerns so that trust between partners is maintained.',
-          'Develop standardized referral intake formats and communication protocols so clinical and community partners can exchange referral information efficiently through referral management platforms.'
-        ]
-      },
-      {
-        num:'2.3', title:'Continuous learning and system improvement',
-        core:[
-          'Develop cross-sector feedback mechanisms that use shared referral outcome metrics to monitor referral performance and guide system improvement across healthcare, community-based organizations, and public health partners.'
-        ],
-        supporting:[
-          'Establish cross-sector performance monitoring and continuous learning processes that enable healthcare organizations, community-based organizations, and public health partners to monitor referral performance, learn from referral experiences, and guide system improvement across sectors.',
-          'Develop and maintain cross-sector dashboards, reports, and structured learning review mechanisms that support performance monitoring and continuous learning, including approaches that function effectively even when partners operate on different technology platforms or data systems.',
-          'Establish recurring cross-sector case review and learning forums where partners examine referral experiences and identify opportunities to improve coordination processes.',
-          'Design pilot initiatives as learning infrastructure by embedding shared measures and structured reflection processes that generate implementation insights.'
-        ]
-      }
-    ]
-  },
-  {
-    id:'p3', cls:'p3', num:'PD 3',
-    title:'Referral navigation ownership and infrastructure',
-    desc:'Establish clear ownership, staffing models, and coordination infrastructure so that individuals reliably move from screening to completed services.',
-    sds:[
-      {
-        num:'3.1', title:'Clear ownership of referral navigation',
-        core:[
-          'Structure referral accountability protocols that designate navigators responsible for follow-up and coordination so individuals who screen positive for ADRD risk consistently move from screening to action.',
-          'Design coordination models that support dedicated navigator roles with clear responsibility for assessment, triage, and follow-up across healthcare and community partners, including shared funding arrangements among public health, healthcare systems, and community organizations.'
-        ],
-        supporting:[
-          'Ensure that screening results trigger documented follow-up across both clinical and community systems so individuals do not stall between identification, referral, and service connection.',
-          'Clarify and sustain responsibility for referral initiation and follow-up across partners, including embedded referral coordinators or care navigators in primary care and specialty clinics where ADRD screening occurs.',
-          'Ensure no individual is lost between screening, referral, and service connection by maintaining continuous accountability for follow-up across clinical and community partners.'
-        ]
-      },
-      {
-        num:'3.2', title:'Network-based navigation infrastructure',
-        core:[
-          'Design network-based coordination models that serve as central navigation points connecting healthcare providers, community-based organizations, and social service partners.',
-          'Establish centralized referral intake and triage functions that route referrals to appropriate community services and partners.',
-          'Establish regional or network-level care navigation hubs that coordinate referrals between healthcare providers and community organizations.'
-        ],
-        supporting:[
-          'Leverage and partner with existing coordination infrastructure entities—such as Area Agencies on Aging, Community Care Hubs, or similar intermediary organizations—that can serve as backbone or hub entities supporting centralized referral intake, navigation, and cross-sector coordination functions.',
-          'Coordinate warm handoffs and ensure follow-up responsibilities are executed across healthcare and community partners so individuals and caregivers do not become lost between systems.',
-          'Connect clinical services, caregiver supports, and social services into coordinated ecosystems that support people living with cognitive concerns.',
-          'Design coordination models that provide care coordinators with the staffing, training, supervision, information access, and operational tools they need to function reliably across healthcare, community-based organizations, and social service partners.',
-          'Promote co-location or embedded service models that bring clinical and community-based services together in shared settings so referrals, screening follow-up, and care navigation can occur more easily, particularly in communities served by smaller clinics or independent providers.'
-        ]
-      },
-      {
-        num:'3.3', title:'Clinical workflow integration',
-        core:[
-          'Develop standardized referral trigger protocols embedded within clinical workflows so that ADRD screening results or other clinical events automatically initiate appropriate referral pathways.'
-        ],
-        supporting:[
-          'Design coordination processes so they are embedded within existing clinical and community workflows rather than functioning as additional tasks.',
-          'Incorporate screening results into routine care follow-up in both clinical and community settings.',
-          'Develop shared longitudinal care planning approaches that allow healthcare and community partners to coordinate services over time.',
-          'Adopt and implement standardized patient and caregiver assessment measures that support consistent identification of needs and guide referral decisions across clinical and community partners.',
-          'Develop patient and caregiver engagement protocols that explain referral pathways and support navigation.',
-          'Establish standardized approaches for assessing patient and caregiver needs across clinical and community settings so that referral decisions are informed consistently across partners.',
-          'Integrate ADRD risk screening into routine preventive care workflows so that screening can scale to the general population and be sustained over time.'
-        ]
-      },
-      {
-        num:'3.4', title:'Referral tracking and visibility systems',
-        core:[
-          'Establish cross-sector referral visibility and accountability processes that ensure clinical and community partners can monitor referral status, completion, service uptake, and outcomes across sectors.'
-        ],
-        supporting:[
-          'Implement standardized referral tracking systems, operational dashboards, and reporting tools that provide shared visibility across clinical and community partners.',
-          'Design operational feedback loops that ensure referring providers and partners receive timely information on referral status, completion, service uptake, and follow-up outcomes so that stalled referrals can be identified and follow-up performance improved.',
-          'Automate referral processes where appropriate to support efficient referral tracking and follow-up while preserving flexibility for different provider workflows and partner capabilities.',
-          'Ensure referral tracking systems use standardized intake and communication formats so referral status, completion, and outcomes can be monitored consistently across partners.'
-        ]
-      }
-    ]
-  },
-  {
-    id:'p4', cls:'p4', num:'PD 4',
-    title:'Sustainable financing and incentive alignment',
-    desc:'Align payment models, funding streams, and performance measures so that referral coordination and navigation become financially sustainable.',
-    sds:[
-      {
-        num:'4.1', title:'Incentives for referral completion',
-        core:[
-          'Incorporate ADRD screening, referral completion, and follow-up into clinical quality measures tied to Medicare and Medicaid benefits.',
-          'Create performance-based incentive models that reward documented referral completion, verified service connection, and follow-up across healthcare and community-based organizations.'
-        ],
-        supporting:[
-          'Align health plan and payer incentive structures to reward collaboration between healthcare organizations and community-based organizations through value-based payment models.',
-          'Create incentives for completed bidirectional referrals so both referring and receiving partners are rewarded for follow-through.'
-        ]
-      },
-      {
-        num:'4.2', title:'Financing coordination infrastructure',
-        core:[
-          'Develop reimbursement mechanisms that support time spent on preventive brain health screening, referral coordination, navigation workforce activities, and cross-sector communication so that risk reduction and coordination activities are financially sustainable.',
-          'Match funding responsibility with financial benefit through shared savings or shared revenue models.'
-        ],
-        supporting:[
-          'Leverage existing care coordination and navigation billing codes (e.g., Medicare Community Health Improvement (CHI) and Principal Illness Navigation (PIN) codes) and other payment models to operationalize reimbursement for preventive screening, referral coordination, and cross-sector communication.',
-          'Tie qualitative and quantitative outcome measures to financial value.',
-          'Conduct pilot evaluations demonstrating cost savings and return on investment.',
-          'Support structured learning collaboratives between community-based organizations and payers.'
-        ]
-      },
-      {
-        num:'4.3', title:'Braided and aligned funding streams',
-        core:[
-          'Braid funding streams across programs and conditions to support and sustain referral coordination infrastructure across healthcare and community-based systems.',
-          'Align funding mechanisms, reporting requirements, and performance measures across programs addressing shared risk factors.'
-        ],
-        supporting:[
-          'Incorporate infrastructure costs such as workforce training, outreach staffing, and referral technology into core funding models.',
-          'Advance payer-driven service braiding models that allow multiple prevention and support services to be bundled for beneficiaries across programs and conditions.'
-        ]
-      },
-      {
-        num:'4.4', title:'Policy and regulatory alignment',
-        core:[
-          'Align and articulate public health roles within major health system transformation initiatives—such as Medicaid 1115 waivers, Rural Health Transformation programs, and health-related social needs (HRSN) navigation models—so that coordination responsibilities are clearly defined across healthcare, public health, and community-based partners.'
-        ],
-        supporting:[
-          'Define and operationalize clear cross-sector roles and responsibilities within transformation initiatives so that public health, healthcare providers, and community-based organizations have aligned expectations for referral coordination and follow-up.',
-          'Develop and advance policy changes that support referrals to community-based services and enable cross-sector coordination.',
-          'Address compliance concerns and regulatory barriers that limit cross-sector participation.',
-          'Leverage Community Health Needs Assessments (CHNA) to identify priority needs and align health system and community-based investments that support community–clinical linkages.'
-        ]
-      }
-    ]
-  },
-  {
-    id:'p5', cls:'p5', num:'PD 5',
-    title:'Shared service and community participation infrastructure',
-    desc:'Enable organizations with varying staffing, technology, and infrastructure capacity to participate reliably in referral systems.',
-    sds:[
-      {
-        num:'5.1', title:'Tiered participation pathways',
-        core:[
-          'Design tiered participation pathways and lowest-common-denominator participation approaches that allow organizations operating under different staffing, technology, and regulatory environments to engage in referral systems without being forced into standardization that does not fit their operations.'
-        ],
-        supporting:[
-          'Enable simplified workflows and shared supports so smaller community-based organizations can participate reliably.',
-          'Define readiness expectations and flexible participation guidance that enable organizations with varying capacity to engage in referral systems without requiring uniform standards that do not fit their operations.',
-          'Address regulatory and compliance differences across organizations so that participation pathways account for variation in licensing, data-sharing requirements, and operational constraints.'
-        ]
-      },
-      {
-        num:'5.2', title:'Shared service hubs',
-        core:[
-          'Develop shared service hubs that provide technology, training, compliance support, and administrative coordination infrastructure to reduce burden and enable community-based organizations to focus on relational care and service delivery.'
-        ],
-        supporting:[
-          'Implement tools that automate administrative processes and support service matching—such as AI-enabled workflow support—within shared service hubs to improve efficiency and coordination across partners.',
-          'Leverage Community Care Hubs, umbrella hub models, or similar intermediary entities to support participation of community-based organizations in shared service infrastructure.',
-          'Provide centralized onboarding, training, and technical assistance to support organizations joining and participating in referral networks.',
-          'Partner with organizations that map and track Community Information Exchange (CIE) and Community Care Hub (CCH) infrastructure to inform planning, alignment, and scaling of shared service hubs.',
-          'Develop and support service matching capabilities within shared service hubs so that individuals can be connected efficiently to appropriate community-based services.'
-        ]
-      },
-      {
-        num:'5.3', title:'Community capacity infrastructure',
-        core:[
-          'Conduct asset mapping and gap analyses of community-based organizations, referral networks, and service infrastructure to inform planning, investment, and design of referral networks and coordination systems.'
-        ],
-        supporting:[
-          'Use asset mapping and gap analysis findings to prioritize investments and target underserved geographic areas, populations, and service gaps.',
-          'Conduct readiness assessments to identify organizational capacity, gaps, and support needs for participation in referral networks, aligned with defined participation expectations and pathways.',
-          'Provide mini-grants or infrastructure stipends to support participation and capacity-building among community-based organizations.',
-          'Provide technical assistance to increase organizational readiness for participation in referral networks and coordination systems.'
-        ]
-      },
-      {
-        num:'5.4', title:'Workforce integration',
-        core:[
-          'Crosstrain and deploy health educators, community health workers, nurses, social workers, and other trusted workforce roles to deliver brain health education, conduct screening outreach, support referral navigation and follow-up, and engage communities across clinical and community settings.',
-          'Integrate brain health and dementia risk reduction across the lifespan into chronic disease and primary care prevention frameworks so it becomes part of routine prevention practice.'
-        ],
-        supporting:[
-          'Train public health practitioners to incorporate brain health and dementia risk reduction across the lifespan into existing programs and services.',
-          'Expand specialized workforce models, such as State Quality Specialists, to include ADRD expertise and support implementation across programs.',
-          'Frame brain health and dementia risk reduction as part of chronic disease prevention across the lifespan, emphasizing its connection to modifiable risk factors such as hypertension, diabetes, and physical inactivity rather than as an inevitable condition of aging.',
-          'Support community engagement strategies that increase awareness of brain health, reduce stigma, and encourage participation in screening, referral, and prevention activities.'
-        ]
-      }
-    ]
-  }
-];
+const data=[{id:"p1",cls:"p1",num:"PD 1",title:"Governance and Public Health Stewardship",desc:"Establish and sustain cross-sector governance and coordination structures, led or convened by public health, that align healthcare, community organizations, and public health around shared system design, expectations, and continuous improvement of the cascade.",sds:[{num:"1.1",title:"Cross-Sector Governance Infrastructure",intent:"Establish formal cross-sector governance structures, led or convened by public health, that define how partners make decisions, set priorities, resolve challenges, and oversee the design and continuous improvement of the brain health cascade as a shared system.",core:["Establish cross-sector governance structures across healthcare, community organizations, and public health, with public health convening and supporting partners to define decision-making authority and set up processes for setting priorities, resolving challenges, and overseeing cascade design and improvement.","Define how public health will coordinate partners, align efforts, and monitor progress across sectors so the cascade functions as a connected system over time, without duplicating clinical or community service delivery.","Establish regular cross-sector governance review processes to revisit priorities, assess progress, and adjust cascade design and coordination approaches over time."],supporting:["Convene healthcare systems and community-based organizations, led by public health, to define shared goals, sector-specific priorities, and shared impact measures that guide cascade design and coordination.","Ensure public health connects efforts across departments and agencies responsible for population health so that brain health, chronic disease prevention, aging services, and community–clinical linkage initiatives are coordinated rather than managed in parallel."]},{num:"1.2",title:"Shared Operational Expectations, Roles, and Accountability",intent:"Define and align how work actually happens throughout the cascade by establishing shared expectations, roles, and accountability across healthcare, community organizations, and public health, with public health helping formalize agreements and ensure consistent coordination in practice.",core:["Align healthcare organizations, community-based organizations, and public health around shared expectations for how the cascade is carried out, including clearly defined roles, responsibilities, timelines, and accountability across all stages—so individuals are consistently supported from risk identification through connection to services.","Work with healthcare and community partners to define and formalize cascade pathways through shared protocols and agreements so partners understand how people move through each stage of the cascade.","Establish shared processes for identifying, addressing, and resolving breakdowns in the cascade—such as missed follow-up, incomplete referrals, or gaps in service connection—so partners can respond quickly and prevent individuals from falling through the cracks."],supporting:["Establish shared expectations for how partners communicate and document information after key cascade events so partners know when to re-engage, adjust support, or escalate care.","Ensure cascade processes are designed so access to services does not depend on personal relationships within or across organizations."]},{num:"1.3",title:"Sustained Cross-Sector Relationship Infrastructure",intent:"Build and maintain the relationships required for cross-sector coordination by establishing structured, ongoing relationship infrastructure, with public health intentionally convening partners, facilitating trust, and aligning perspectives so shared workflows and accountability can function in practice.",core:["Establish and sustain structured, ongoing cross-sector relationship infrastructure—such as regular convenings, facilitated discussions, and dedicated coordination support—with public health responsible for maintaining these processes so partners can build trust, surface challenges, and align on how work happens across the cascade over time."],supporting:["Facilitate and maintain partnerships between healthcare organizations and community-based organizations, with public health helping partners align priorities, clarify complementary roles, and operationalize how they will work together within referral and support pathways.","Create structured opportunities for partners to surface operational constraints, misaligned incentives, and handoff challenges, with public health facilitating conversations that move partners from blame toward shared problem-solving.","Identify and translate the values, incentives, and success measures of each sector into shared areas of alignment, with public health using this understanding to shape collaboration strategies, messaging, and engagement approaches that resonate across partners.","Establish ongoing partner engagement strategies, including onboarding processes, regular touchpoints, and re-engagement approaches, so relationships are sustained despite staff turnover, shifting priorities, and changes in participation."]}],eval:{pdLevel:["% of identified cross-sector partners participating in governance structure","Presence of documented governance structure with defined decision-making process (yes/no)","% of governance meetings where data or performance is reviewed","% of identified system issues (e.g., breakdowns) that result in a documented action"],sdLevel:[{sd:"1.1 Governance Infrastructure",measures:["Number of governance meetings held in past 6 months","% of partners with defined decision-making role documented"]},{sd:"1.2 Roles & Accountability",measures:["% of partners with signed/shared agreements (MOUs, protocols, or equivalent)","% of cascade stages with clearly assigned responsible entity"]},{sd:"1.3 Relationship Infrastructure",measures:["Number of structured cross-sector convenings held","Partner-reported trust/alignment score (simple annual survey)"]}]}},{id:"p2",cls:"p2",num:"PD 2",title:"Midlife Population Reach and Risk Identification",desc:"Reach and engage adults beginning in midlife by integrating risk identification into clinical and community settings and ensuring clear, public health–supported pathways connect people to risk reduction, screening, and next steps across the cascade.",sds:[{num:"2.1",title:"Risk Identification, Risk Reduction Pathways, and ADRD Screening Initiation",intent:"Ensure adults beginning in midlife are systematically identified and guided to appropriate next steps by embedding ADRD risk identification into routine workflows and establishing clear, public health–stewarded pathways that connect risk to evidence-based risk reduction and appropriate screening initiation.",core:["Ensure adults beginning in midlife are systematically identified and guided to appropriate next steps by supporting integration of ADRD risk identification into routine clinical touchpoints and by working across partners to clearly define what should happen next based on a person's level of risk, including connection to evidence-based risk reduction interventions and appropriate screening when needed.","Use population-level data and existing program touchpoints to identify and prioritize midlife populations at elevated risk based on modifiable risk factors and align outreach and engagement strategies accordingly.","Work with partners to ensure that people identified as having elevated risk are connected to available evidence-based programs that address modifiable risk factors, so there is a clear and consistent step from identification to action.","Work with partners to define when and for whom cognitive screening should happen after risk is identified or after risk reduction interventions are completed, so screening is based on a person's level of risk and occurs at the right time.","Work with partners to ensure that people continue to be monitored and can re-engage with appropriate services after a negative ADRD diagnostic evaluation or after completing risk reduction interventions, including follow-up and re-screening as needed."],supporting:["Develop and disseminate guidance for integrating ADRD risk identification into chronic disease, primary care, and community-based workflows.","Develop and disseminate standardized risk identification approaches, including recommended tools, workflows, and integration points within clinical and community-based settings.","Align evidence-based risk reduction programs with identified priority populations and referral pathways to ensure availability and accessibility of services that match identified needs."]},{num:"2.2",title:"Community-Based Access Points and Workforce Engagement",intent:"Expand how and where people enter the cascade by leveraging community-based settings and trusted workforce roles, with public health coordinating outreach strategies, supporting workforce deployment, and ensuring multiple accessible entry points beyond clinical care.",core:["Support and coordinate the cross-training and deployment of community health workers, health educators, nurses, social workers, and other trusted workforce roles to conduct ADRD risk identification, deliver risk reduction education, support screening outreach, and assist with navigation and follow-up across clinical and community-based settings that reach adults beginning in midlife.","Work with healthcare and community partners to establish and support multiple, consistent entry points into the cascade—including primary care, community-based settings, and self-directed access—so adults can enter without requiring a provider referral and are reliably connected to next steps.","Work with healthcare and community partners to define minimum expectations for what happens after entry into the cascade—such as basic risk identification, education, and connection to next steps—so individuals entering through different settings receive a consistent and appropriate response."],supporting:["Develop and disseminate plain-language, culturally adapted brain health materials, led or supported by public health, that are appropriate for different literacy levels and available in the languages spoken in the community.","Partner with faith-based organizations and community leaders as trusted messengers to support outreach and engagement, building on established chronic disease prevention approaches.","Establish and maintain outreach partnerships with employers, housing programs, fitness and wellness organizations, and other community settings where midlife adults can be reached outside of clinical care.","Facilitate referral agreements between community-based organizations offering evidence-based programs and primary care providers to support smooth transitions from risk identification to risk reduction and screening."]},{num:"2.3",title:"Integration into Public Health Programs and Workforce",intent:"Embed brain health across existing public health programs by integrating ADRD risk identification, risk reduction, and screening into chronic disease prevention efforts, with public health aligning internal programs, staff roles, and performance expectations to reach midlife populations.",core:["Integrate ADRD risk identification, risk reduction, and screening into existing public health chronic disease prevention and management programs so these activities become part of routine program delivery for adults beginning in midlife.","Align ADRD-specific workplans (e.g., BOLD and jurisdictional ADRD coalition workplans), performance measures, staff roles, and training to support and expand consistent implementation of brain health activities across chronic disease programs."],supporting:["Provide training and technical assistance to non-ADRD public health staff to build skills in integrating brain health risk identification, risk reduction, and screening into existing programs.","Expand specialized workforce models, such as State Quality Specialists or similar roles, to include ADRD expertise and support implementation across programs.","Frame brain health and dementia risk reduction as part of chronic disease prevention across the lifespan, emphasizing its connection to modifiable risk factors such as hypertension, diabetes, and physical inactivity.","Support peer-led and community-led risk reduction models that build on existing social networks and trusted relationships."]}],eval:{pdLevel:["Number (or %) of adults reached through risk identification activities (clinical + community)","% of individuals identified at elevated risk who are connected to a next step","Number of entry points into the cascade (clinical + community)","% of priority populations reached (if stratified data available)"],sdLevel:[{sd:"2.1 Risk Identification & Pathways",measures:["Number of sites implementing ADRD risk identification workflows","% of identified individuals with documented next step (risk reduction or screening)"]},{sd:"2.2 Community Access Points",measures:["Number of community-based sites offering entry into the cascade","Number of workforce (CHWs, educators, etc.) trained/deployed"]},{sd:"2.3 Integration into PH Programs",measures:["Number of existing PH or government programs incorporating brain health activities","% of relevant PH staff trained in ADRD integration"]}]}},{id:"p3",cls:"p3",num:"PD 3",title:"Shared Data, Measurement, and Learning Systems",desc:"Establish shared data systems, measurement approaches, and learning processes, with public health convening and supporting partners, so information can be exchanged, performance can be monitored, and coordination across the cascade can continuously improve.",sds:[{num:"3.1",title:"Shared Data Definitions, Metrics, and Documentation Standards",intent:"Align partners on what data is collected, how outcomes are defined, and what documentation is expected across the cascade.",core:["Work with partners to define and implement a minimum set of shared data elements and documentation expectations needed to support movement across the cascade (e.g., risk status, referral reason, service provided, follow-up outcome), aligning these with existing clinical and community workflows to reduce duplication and burden.","Work with partners to develop and adopt shared data and documentation standards that are feasible and aligned with existing systems, provide value to healthcare and community organizations contributing data, and support interoperability and reduce administrative burden."],supporting:["Work with partners to define shared goals and intended outcomes for cascade performance and align on how these outcomes will be measured using the agreed-upon data elements, so partners are aligned on what success looks like and how coordination is expected to improve outcomes."]},{num:"3.2",title:"Cross-Sector Data Exchange and Coordination",intent:"Enable consistent movement of information across partners by supporting practical data-sharing approaches and participation in existing exchange pathways, with public health convening partners and supporting implementation across systems with varying technical capacity.",note:"The current data and technology landscape is highly fragmented across clinical and community partners, with systems that are not well connected and vary widely in capability. Interoperability standards—such as Fast Healthcare Interoperability Resources (FHIR) and related implementation guides—are not set locally; they are developed and governed at the national level by organizations such as the Office of the National Coordinator for Health Information Technology (ONC), Health Level Seven International (HL7), the Centers for Medicare & Medicaid Services (CMS), and the Trusted Exchange Framework and Common Agreement (TEFCA) Qualified Health Information Network (QHIN) ecosystem. Public health agencies must operate within these externally defined standards. Even within healthcare, adoption is uneven and often limited by EHR system capabilities and available resources. These challenges are more pronounced across community-based organizations, Area Agencies on Aging, and community care hubs, many of which do not have structured electronic systems. As a result, fully interoperable data exchange across partners is not yet feasible. Public health's role is to support practical data-sharing approaches within existing systems, align partners around usable data, and translate national standards into guidance that can be applied across settings, while positioning systems for more advanced interoperability over time.",core:["Work with partners to identify and use existing data exchange pathways and intermediary platforms (e.g., Health Information Exchanges, Community Information Exchanges, referral and care coordination platforms, or secure data-sharing methods) that enable cross-sector coordination without requiring full system interoperability.","Support implementation of practical data exchange approaches that are tailored to the systems, workflows, and technical capacity of participating partners, allowing information to move between clinical and community partners at key points in the cascade (e.g., referral, service delivery, follow-up), recognizing that exchange may occur through a mix of automated and manual processes."],supporting:["Work with partners to design data sharing exchange approaches that address privacy, compliance, and liability concerns so trust is maintained and participation in cross-sector data sharing is sustained.","Develop and promote simple, shared intake formats and communication expectations that support day-to-day data exchange across partners and align with interoperability standards.","Support onboarding and ongoing participation of healthcare and community partners in shared data exchange systems, including technical assistance, training, and coordination support."]},{num:"3.3",title:"Continuous Learning, Feedback, and System Improvement",intent:"Turn data into action by establishing cross-sector learning systems that monitor performance and drive improvement, with public health stewarding feedback loops, convening partners for shared learning, and guiding system-wide adaptation over time.",core:["Lead development and use of cross-sector feedback approaches—such as shared reports, dashboards, or structured review processes—that apply agreed-upon performance metrics to monitor system performance and guide continuous improvement across partners, using available data.","Establish and facilitate regular processes for reviewing shared data with partners and using findings to identify gaps, adjust workflows, and implement improvements across the cascade, using data that is available and feasible to collect."],supporting:["Convene recurring cross-sector case review and learning forums where partners examine real-world experiences across the cascade and identify opportunities to improve coordination and care processes.","Design and support pilot initiatives that embed shared measures and structured reflection processes to test approaches, generate practical insights, and inform system improvement over time."]}],eval:{pdLevel:["% of partners using agreed-upon core data elements","Number of partners actively exchanging data (any method)","Presence of shared performance report/dashboard (yes/no)","Number of cross-sector performance reviews conducted"],sdLevel:[{sd:"3.1 Data Definitions",measures:["Existence of defined minimum data set (yes/no)","% of partners adopting at least 1–2 shared data elements"]},{sd:"3.2 Data Exchange",measures:["Number of active data-sharing pathways (HIE, referral platform, secure file, etc.)","% of partners participating in at least one exchange method"]},{sd:"3.3 Learning Systems",measures:["Number of cross-sector data review sessions held","Number of improvement actions taken based on shared data"]}]}},{id:"p4",cls:"p4",num:"PD 4",title:"Referral Navigation Ownership and Infrastructure",desc:"Ensure people move reliably through the cascade by establishing clear ownership for navigation, integrating screening and follow-up into clinical workflows, and building coordinated infrastructure and tracking systems, with public health supporting alignment and consistency across partners.",sds:[{num:"4.1",title:"Clear Ownership and Accountability for Navigation",intent:"Ensure individuals do not fall through the cracks by clearly assigning responsibility for referral navigation and follow-up, with public health helping define accountability models and support coordination approaches that move people reliably through the cascade.",core:["Work with partners to establish and sustain clear accountability for navigation and follow-up by defining who is responsible for coordinating care and supporting individuals as they move through the cascade.","Support development of coordination models that include dedicated navigator roles with clear responsibility for assessment, triage, follow-up, and connection to services across healthcare and community partners, including shared approaches to funding and support.","Ensure systems are in place so individuals identified as at risk are consistently connected to appropriate next steps and supported in progressing through the cascade."],supporting:["Ensure that screening or risk identification triggers documented follow-up across partners so individuals do not stall after entry into the cascade.","Establish expectations for how partners communicate and hand off responsibility during transitions so accountability is maintained across the cascade."]},{num:"4.2",title:"Network-Based Navigation and Coordination Infrastructure",intent:"Establish shared, system-level navigation infrastructure that connects clinical and community partners, with public health convening and coordinating partners to develop and align centralized intake, triage, and coordination models that function across the network.",core:["Work with partners to design and establish regional or network-based navigation infrastructure—such as centralized hubs or coordination models—that connect healthcare providers, community-based organizations, and social service partners and support movement across the cascade.","Support development and implementation of centralized intake and triage functions that assess needs and route individuals to appropriate services and supports across the cascade."],supporting:["Leverage and align with existing coordination infrastructure—such as Area Agencies on Aging, Community Care Hubs, or similar entities—that can serve as hub or backbone organizations for navigation and coordination.","Support connections across clinical services, caregiver supports, and social services so partners function as a coordinated network rather than separate programs.","Ensure navigation infrastructure is supported by adequate staffing, training, supervision, information access, and operational tools so it functions reliably across partners."]},{num:"4.3",title:"Clinical Workflow Integration",intent:"Embed cascade activities into routine care by integrating screening, referral, and follow-up processes into clinical workflows, with public health helping define expectations and promote consistency.",core:["Work with healthcare partners to develop and implement standardized workflow triggers and documentation practices so clinical events, such as screening results, automatically initiate appropriate next steps across the cascade.","Define and promote minimum expectations for cognitive risk and early detection screening—including who should be screened and when—while allowing flexibility in tools and workflows based on setting and population.","Support integration of screening and follow-up into routine clinical workflows so these activities are normalized for patients, occur consistently, and are not dependent on individual provider discretion."],supporting:["Develop standardized documentation approaches that capture screening results and support follow-up across clinical and community settings."]},{num:"4.4",title:"Cross-Sector Cascade Visibility, Tracking, and Accountability Systems",intent:"Ensure shared visibility into system performance by establishing tracking and accountability mechanisms across the cascade, with public health supporting the development of dashboards, feedback loops, and monitoring processes that identify gaps and drive follow-through.",core:["Work with partners to establish cross-sector visibility and accountability processes so clinical and community organizations can monitor progression across the cascade, identify gaps, and take action to address breakdowns in follow-through."],supporting:["Support or implement standardized tracking systems, operational dashboards, and reporting tools that provide shared visibility across the cascade, not limited to a single point of care or interaction.","Ensure partners receive timely information on progression across the cascade so stalled movement can be identified and addressed.","Ensure tracking approaches are aligned across partners so progression across the cascade can be consistently monitored and compared."]}],eval:{pdLevel:["% of individuals identified at risk who receive navigation support","% of individuals with documented follow-up after screening or referral","% of individuals progressing from one cascade stage to the next (even if sampled)","Presence of a designated navigation model (yes/no)"],sdLevel:[{sd:"4.1 Ownership",measures:["% of partners with defined navigation responsibility","Number of navigators trained or deployed"]},{sd:"4.2 Infrastructure",measures:["Presence of centralized intake/triage (yes/no)","Number of organizations connected to navigation network"]},{sd:"4.3 Clinical Workflow Integration",measures:["% of clinical sites using screening triggers/workflows","% of screenings with documented follow-up plan"]},{sd:"4.4 Tracking & Visibility",measures:["Presence of tracking system or dashboard (yes/no)","% of partners receiving performance feedback reports"]}]}},{id:"p5",cls:"p5",num:"PD 5",title:"Sustainable Financing and Incentive Alignment",desc:"Align payment models, funding streams, incentives, and policy frameworks to support coordination and sustained performance across the cascade, with public health informing, convening, and supporting alignment across partners.",sds:[{num:"5.1",title:"Incentives for Cascade Performance",intent:"Align financial and performance incentives with desired outcomes across the cascade, with public health advocating for and helping shape measures and payment models that reward screening, follow-up, and successful service connection—not just referrals.",core:["Advocate for and work with partners to incorporate performance expectations across the cascade into clinical quality measures tied to Medicare and Medicaid benefit.","Support development of performance-based payment and incentive models that reward completion of key activities across the cascade, including screening, follow-up, and successful service connection across healthcare and community-based organizations."],supporting:["Work with health plans and payers to align incentive structures so they reward performance and follow-through across the cascade, not just initial actions.","Promote incentive approaches that reward both referring and receiving partners for completing key activities across the cascade and ensuring follow-through."]},{num:"5.2",title:"Financing Models for Coordination Infrastructure",intent:"Ensure coordination activities are financially supported by developing reimbursement and funding models that cover screening, navigation, and cross-sector communication, with public health helping align partners and advance sustainable financing approaches.",core:["Work with partners to develop and advance reimbursement mechanisms that support time spent on activities across the cascade—such as screening, navigation, and cross-sector communication—so these activities are financially sustainable across healthcare, public health, and community-based organizations.","Support development of financing approaches that align who pays for coordination activities with who benefits from improved outcomes, including shared savings, shared revenue, or other cross-sector models."],supporting:["Promote use of existing care coordination and navigation billing codes (e.g., Medicare Community Health Improvement (CHI) and Principal Illness Navigation (PIN) codes) and other payment mechanisms to support reimbursement for activities across the cascade.","Work with partners to connect performance and outcomes across the cascade to financial value to support ongoing investment in coordination activities.","Support pilot efforts and evaluations that demonstrate cost savings, improved outcomes, and return on investment for coordination infrastructure."]},{num:"5.3",title:"Braided and Aligned Funding Streams",intent:"Reduce fragmentation by aligning and braiding funding across programs and conditions, with public health coordinating across funding streams to support shared infrastructure and integrated implementation of cascade activities.",core:["With public health convening and coordinating partners, work across programs and funding streams to braid funding so coordination infrastructure and activities across the cascade can be supported and sustained.","Align funding mechanisms, reporting requirements, and performance measures across programs addressing shared risk factors, with public health convening partners and supporting alignment efforts."],supporting:["Incorporate infrastructure costs—such as workforce training, outreach staffing, coordination capacity, and technology—into core funding models that support activities across the cascade.","Support development of payer-driven models that bundle or braid funding for prevention, risk reduction, and support services across programs and conditions for individuals participating in the cascade."]},{num:"5.4",title:"Policy and Regulatory Alignment",intent:"Create an enabling policy environment by aligning regulations, quality frameworks, and major health system initiatives with cascade goals, with public health advancing policy changes and ensuring roles and expectations are clearly defined across sectors.",core:["Work with partners to define and operationalize public health roles within major health system transformation initiatives—such as Medicaid 1115 waivers and HRSN models—so coordination responsibilities and expectations across the cascade are clearly defined across healthcare, public health, and community-based organizations.","Support inclusion of cascade activities within quality measurement and performance frameworks so expectations for screening, follow-up, and service connection are required, measured, and reinforced across systems."],supporting:["Work with partners to identify policy opportunities and advance policy changes that support coordination and service connection across the cascade.","Identify and address regulatory, compliance, and policy barriers that limit cross-sector participation and coordination.","Engage with federal and state partners to inform and educate on quality measure development and payment model design so policies and frameworks support performance and follow-through across the cascade."]}],eval:{pdLevel:["Number of funding streams supporting cascade activities","Number of partners using reimbursement mechanisms for coordination/navigation","Presence of at least one performance-linked incentive model (yes/no)","Amount of funding aligned or braided across programs (can be categorical)"],sdLevel:[{sd:"5.1 Incentives",measures:["Number of measures tied to cascade performance","Number of payer or plan partners engaged"]},{sd:"5.2 Financing Models",measures:["Number of organizations billing for navigation/coordination","Number of financing models tested (e.g., pilots)"]},{sd:"5.3 Braided Funding",measures:["Number of programs contributing to shared infrastructure","Presence of coordinated funding plan (yes/no)"]},{sd:"5.4 Policy Alignment",measures:["Number of policies or initiatives incorporating cascade elements","Number of barriers identified and addressed"]}]}},{id:"p6",cls:"p6",num:"PD 6",title:"Participation Infrastructure and Shared Services",desc:"Enable organizations with varying capacity to participate in the cascade by establishing flexible participation pathways, shared service infrastructure, and targeted capacity-building investments, with public health leading assessment, coordination, and support.",sds:[{num:"6.1",title:"Tiered Participation Pathways",intent:"Enable broad participation by defining flexible, tiered pathways for organizations with different capacities, with public health setting minimum expectations and supporting pathways that allow diverse partners to engage without overburdening them.",core:["Design and implement tiered participation pathways, led or coordinated by public health, with clearly defined minimum requirements so organizations with different staffing, technology, and regulatory capacities can participate in the cascade without being forced into uniform standards that do not fit their operations."],supporting:["Provide guidance and support to help organizations understand participation expectations and engage at the level that fits their capacity.","Work with partners to address regulatory and compliance differences across organizations so participation pathways account for variation in licensing, data-sharing requirements, and operational constraints.","Support organizations in building capacity over time so they can move to higher levels of participation as readiness and resources increase."]},{num:"6.2",title:"Shared Service Infrastructure",intent:"Reduce burden on community organizations by establishing shared service infrastructure that provides operational, technical, and administrative support, with public health facilitating development, alignment, or use of these models.",core:["Work with partners to establish and support shared service infrastructure—such as shared service hubs or similar models—that provide technology, training, compliance support, and administrative coordination to reduce burden and enable community-based organizations to participate in and deliver services across the cascade."],supporting:["Leverage Community Care Hubs, umbrella hub models, or similar intermediary entities to support participation of community-based organizations in shared service infrastructure.","Provide centralized onboarding, training, and technical assistance to support organizations joining and participating in shared service infrastructure and the broader cascade.","Develop and support service matching tools within shared service infrastructure so organizations can identify and connect individuals to appropriate community-based services.","Support ongoing coordination and sustainability of shared service infrastructure so it continues to function effectively across partners over time."]},{num:"6.3",title:"Community Capacity Assessment and Investment Infrastructure",intent:"Continuously assess and strengthen community capacity by using asset mapping and gap analyses to guide investment and system design, with public health leading these assessments and directing resources to address gaps and support participation.",core:["Lead ongoing asset mapping and gap analysis to assess community-based organizations, service capacity, and coordination infrastructure across the cascade, and use these findings to guide planning, investment, and system design."],supporting:["Use asset mapping and gap analysis findings to prioritize investments and direct resources to underserved geographic areas, populations, and service gaps.","Conduct readiness assessments to identify organizational capacity, gaps, and support needs for participation in the cascade, aligned with defined participation pathways and expectations.","Provide mini-grants or infrastructure stipends to support participation and build capacity among community-based organizations."]}],eval:{pdLevel:["Number of CBOs participating in the cascade","% of CBOs participating at different tiers (basic vs advanced)","Number of CBOs receiving capacity-building support","Geographic or population coverage of participating CBOs"],sdLevel:[{sd:"6.1 Tiered Participation",measures:["Number of organizations enrolled at each tier","% of organizations meeting minimum participation requirements"]},{sd:"6.2 Shared Services",measures:["Number of CBOs using shared infrastructure (hub, platform, etc.)","Number of trainings/TA sessions delivered"]},{sd:"6.3 Capacity Assessment",measures:["Completion of asset map/gap analysis (yes/no)","Number of investments made based on identified gaps"]}]}}];
 
-function toggle(pdId, sdKey) {
-  if (sdKey) {
-    const body = document.getElementById(sdKey + '-body');
-    const chev = document.getElementById(sdKey + '-chev');
-    const open = body.classList.toggle('open');
-    chev.classList.toggle('open', open);
-  } else {
-    const body = document.getElementById(pdId + '-body');
-    const chev = document.getElementById(pdId + '-chev');
-    const open = body.classList.toggle('open');
-    chev.classList.toggle('open', open);
+function toggle(pdId,sdKey){
+  if(sdKey){
+    const b=document.getElementById(sdKey+'-body'),c=document.getElementById(sdKey+'-chev');
+    const o=b.classList.toggle('open');c.classList.toggle('open',o);
+  }else{
+    const b=document.getElementById(pdId+'-body'),c=document.getElementById(pdId+'-chev');
+    const o=b.classList.toggle('open');c.classList.toggle('open',o);
   }
 }
+function expandAll(){document.querySelectorAll('.pd-body,.sd-body,.eval-body').forEach(e=>e.classList.add('open'));document.querySelectorAll('.pd-chevron,.sd-chevron,.eval-chevron').forEach(e=>e.classList.add('open'));}
+function collapseAll(){document.querySelectorAll('.pd-body,.sd-body,.eval-body').forEach(e=>e.classList.remove('open'));document.querySelectorAll('.pd-chevron,.sd-chevron,.eval-chevron').forEach(e=>e.classList.remove('open'));}
 
-function expandAll() {
-  document.querySelectorAll('.pd-body, .sd-body').forEach(el => el.classList.add('open'));
-  document.querySelectorAll('.pd-chevron, .sd-chevron').forEach(el => el.classList.add('open'));
+function renderEval(pd){
+  if(!pd.eval)return'';
+  const eid=pd.id+'-eval';
+  const sdr=pd.eval.sdLevel.map(s=>`<div class="eval-sub-label">${s.sd}</div>${s.measures.map(m=>`<div class="eval-item">${m}</div>`).join('')}`).join('');
+  return`<div class="eval-block"><button class="eval-header" onclick="toggle('${pd.id}','${eid}')"><span class="eval-title">Sample evaluation measures</span><span class="eval-chevron" id="${eid}-chev">▶</span></button><div class="eval-body" id="${eid}-body"><div class="eval-section"><div class="eval-section-label">Core performance measures (PD-level)</div>${pd.eval.pdLevel.map(m=>`<div class="eval-item">${m}</div>`).join('')}</div><div class="eval-section"><div class="eval-section-label">Secondary driver process measures</div>${sdr}</div></div></div>`;
 }
 
-function collapseAll() {
-  document.querySelectorAll('.pd-body, .sd-body').forEach(el => el.classList.remove('open'));
-  document.querySelectorAll('.pd-chevron, .sd-chevron').forEach(el => el.classList.remove('open'));
-}
-
-function render() {
-  let html = '';
-  data.forEach(pd => {
-    const sdCount = pd.sds.length;
-    const coreCount = pd.sds.reduce((a, s) => a + s.core.length, 0);
-    html += `<div class="pd-block ${pd.cls}">
-      <button class="pd-header" onclick="toggle('${pd.id}')">
-        <span class="pd-badge">${pd.num}</span>
-        <span class="pd-title">${pd.title}</span>
-        <span class="pd-count">${sdCount} secondary drivers</span>
-        <span class="pd-chevron" id="${pd.id}-chev">▶</span>
-      </button>
-      <div class="pd-body" id="${pd.id}-body">
-        <p class="pd-desc">${pd.desc}</p>`;
-
-    pd.sds.forEach(sd => {
-      const sdKey = `${pd.id}-sd-${sd.num.replace('.', '_')}`;
-      html += `<div class="sd-block">
-        <button class="sd-header" onclick="toggle('${pd.id}','${sdKey}')">
-          <span class="sd-num">${sd.num}</span>
-          <span class="sd-title">${sd.title}</span>
-          <span class="sd-chevron" id="${sdKey}-chev">▶</span>
-        </button>
-        <div class="sd-body" id="${sdKey}-body">
-          <div class="act-section">
-            <div class="act-label">Core system activities</div>
-            ${sd.core.map(a => `<div class="act-item">${a}</div>`).join('')}
-          </div>
-          ${sd.supporting && sd.supporting.length ? `<div class="act-section">
-            <div class="act-label">Supporting implementation activities</div>
-            ${sd.supporting.map(a => `<div class="act-item supporting">${a}</div>`).join('')}
-          </div>` : ''}
-        </div>
-      </div>`;
+function render(){
+  let html='';
+  data.forEach(pd=>{
+    html+=`<div class="pd-block ${pd.cls}"><button class="pd-header" onclick="toggle('${pd.id}')"><span class="pd-badge">${pd.num}</span><span class="pd-title">${pd.title}</span><span class="pd-count">${pd.sds.length} secondary drivers</span><span class="pd-chevron" id="${pd.id}-chev">▶</span></button><div class="pd-body" id="${pd.id}-body"><p class="pd-desc">${pd.desc}</p>`;
+    pd.sds.forEach(sd=>{
+      const sk=`${pd.id}-sd-${sd.num.replace('.','_')}`;
+      html+=`<div class="sd-block"><button class="sd-header" onclick="toggle('${pd.id}','${sk}')"><span class="sd-num">${sd.num}</span><span class="sd-title">${sd.title}</span><span class="sd-chevron" id="${sk}-chev">▶</span></button><div class="sd-body" id="${sk}-body">${sd.intent?`<div class="sd-intent">${sd.intent}</div>`:''}${sd.note?`<div class="special-note"><div class="special-note-label">Context &amp; note on interoperability</div>${sd.note}</div>`:''}<div class="act-section"><div class="act-label">Core system activities</div>${sd.core.map(a=>`<div class="act-item">${a}</div>`).join('')}</div>${sd.supporting&&sd.supporting.length?`<div class="act-section"><div class="act-label">Supporting activities</div>${sd.supporting.map(a=>`<div class="act-item supporting">${a}</div>`).join('')}</div>`:''}</div></div>`;
     });
-
-    html += `</div></div>`;
+    html+=renderEval(pd);
+    html+=`</div></div>`;
   });
-  document.getElementById('diagram').innerHTML = html;
+  document.getElementById('diagram').innerHTML=html;
 }
-
 render();
 </script>
 

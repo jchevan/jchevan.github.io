@@ -27,6 +27,7 @@ website:
       - href: static/h5p-test.html
         text: H5P Timeline
         icon: bi-arrow-clockwise
+        target: _blank
 
 format:
   html:
