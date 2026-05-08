@@ -25,7 +25,7 @@ website:
         text: ADRD Driver Diagram
         icon: bi-grid-1x2
       - href: static/h5p-test.html
-        text: H5P Timeline
+        text: H5P Timeline for Arthritis
         icon: bi-arrow-clockwise
         target: _blank
 
