@@ -1,0 +1,199 @@
+---
+title: "Policy Image"
+format: html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Reform Pathway</title>
+    <style>
+        :root {
+            --navy: #1a3a5f;
+            --amber: #f39c12;
+            --teal: #16a085;
+            --light-gray: #f4f7f6;
+            --border-color: #d1d8e0;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            color: var(--text-dark);
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--navy);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+
+        .infographic-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+
+        /* Columns */
+        .phase-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .header-label {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Color Coding for Layers */
+        .bg-navy { background-color: var(--navy); }
+        .bg-amber { background-color: var(--amber); }
+        .bg-teal { background-color: var(--teal); }
+
+        /* Content Blocks */
+        .block {
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--light-gray);
+            font-size: 0.85rem;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .block.highlight {
+            border: 2px solid var(--navy);
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .block.barrier {
+            border-left: 5px solid var(--amber);
+        }
+
+        .block.solution {
+            border-left: 5px solid var(--teal);
+        }
+
+        ul {
+            margin: 5px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .connector {
+            text-align: center;
+            color: var(--navy);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        /* Decorative Arrows for Flow */
+        .phase-column:not(:last-child)::after {
+            content: '➔';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            color: var(--border-color);
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+
+        .infographic-container { position: relative; }
+
+        @media (max-width: 900px) {
+            .infographic-container { flex-direction: column; }
+            .phase-column:not(:last-child)::after { content: '↓'; bottom: -15px; top: auto; right: 50%; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Academic-Community Partnership: From Proof of Concept to Policy Reform</h1>
+
+    <div class="infographic-container">
+        
+        <!-- Phase 1: Context -->
+        <div class="phase-column">
+            <div class="header-label bg-navy">1. POLICY CONTEXT</div>
+            <div class="block">
+                <strong>Existing Initiatives:</strong>
+                <ul>
+                    <li>Healthy Aging and SDOH Efforts</li>
+                    <li>Age-Friendly Health Systems</li>
+                    <li>CMS GUIDE Model</li>
+                    <li>Medicare Diabetes Prevention</li>
+                    <li>Social Prescribing Movement</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Phase 2: Practice Model -->
+        <div class="phase-column">
+            <div class="header-label bg-navy">2. PROVEN PRACTICE MODEL</div>
+            <div class="connector">↓</div>
+            <div class="block highlight">
+                <strong>Academic-Community Partnership</strong>
+                <strong>Clinical-Community Partnership</strong>
+                <p style="margin: 10px 0; font-weight: bold; color: var(--navy);">MyHealthIowa + Iowa Community HUB</p>
+                <p>Demonstrated success in bridging clinical care and community resources.</p>
+            </div>
+        </div>
+
+        <!-- Phase 3: Gaps -->
+        <div class="phase-column">
+            <div class="header-label bg-amber">3.POLICY GAPS</div>
+            <div class="block barrier"><strong>Gap 1:</strong> Financing Misalignment</div>
+            <div class="block barrier"><strong>Gap 2:</strong> Fragmented Systems</div>
+            <div class="block barrier"><strong>Gap 3:</strong> Workforce Limitations</div>
+            <div class="block barrier"><strong>Gap 4:</strong> Infrastructure Deficits</div>
+        </div>
+
+        <!-- Phase 4: Recommendations -->
+        <div class="phase-column">
+            <div class="header-label bg-teal">4. POLICY RECOMMENDATIONS</div>
+            <div class="block solution">
+                <strong>R1 & R3:</strong> Sustainable Reimbursement and CCH Integration
+            </div>
+            <div class="block solution">
+                <strong>R2:</strong> Academic–Community Partnerships through Federal Investment
+            </div>
+            <div class="block solution">
+                <strong>R4:</strong> Diversity and Community-Based Training
+            </div>
+            <div class="block solution">
+                <strong>R5:</strong> Equity-Focused National Quality Metrics
+            </div>
+        </div>
+
+    </div>
+
+    <p style="text-align: center; margin-top: 40px; font-size: 0.8rem; color: #7f8c8d;">
+        <em>Figure 1: Simplified pathway mapping the transition from identified community models to national policy reform.</em>
+    </p>
+
+</body>
+</html>

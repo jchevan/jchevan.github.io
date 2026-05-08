@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>H5P-Test – JChev</title>
+<title>Policy Image – JChev</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">H5P-Test</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Policy Image</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">H5P-Test</h1>
+<h1 class="title">Policy Image</h1>
 </div>
 
 
@@ -182,21 +182,200 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+&lt;!DOCTYPE html&gt;
 
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Policy Reform Pathway
+</title>
+<style>
+        :root {
+            --navy: #1a3a5f;
+            --amber: #f39c12;
+            --teal: #16a085;
+            --light-gray: #f4f7f6;
+            --border-color: #d1d8e0;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            color: var(--text-dark);
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--navy);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+
+        .infographic-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: stretch;
+        }
+
+        /* Columns */
+        .phase-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .header-label {
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Color Coding for Layers */
+        .bg-navy { background-color: var(--navy); }
+        .bg-amber { background-color: var(--amber); }
+        .bg-teal { background-color: var(--teal); }
+
+        /* Content Blocks */
+        .block {
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--light-gray);
+            font-size: 0.85rem;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .block.highlight {
+            border: 2px solid var(--navy);
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .block.barrier {
+            border-left: 5px solid var(--amber);
+        }
+
+        .block.solution {
+            border-left: 5px solid var(--teal);
+        }
+
+        ul {
+            margin: 5px 0 0 18px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .connector {
+            text-align: center;
+            color: var(--navy);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        /* Decorative Arrows for Flow */
+        .phase-column:not(:last-child)::after {
+            content: '➔';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            color: var(--border-color);
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+
+        .infographic-container { position: relative; }
+
+        @media (max-width: 900px) {
+            .infographic-container { flex-direction: column; }
+            .phase-column:not(:last-child)::after { content: '↓'; bottom: -15px; top: auto; right: 50%; }
+        }
+    </style>
 
 
+<pre><code>&lt;h1&gt;Academic-Community Partnership: From Proof of Concept to Policy Reform&lt;/h1&gt;
+
+&lt;div class="infographic-container"&gt;
+    
+    &lt;!-- Phase 1: Context --&gt;
+    &lt;div class="phase-column"&gt;
+        &lt;div class="header-label bg-navy"&gt;1. POLICY CONTEXT&lt;/div&gt;
+        &lt;div class="block"&gt;
+            &lt;strong&gt;Existing Initiatives:&lt;/strong&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Healthy Aging and SDOH Efforts&lt;/li&gt;
+                &lt;li&gt;Age-Friendly Health Systems&lt;/li&gt;
+                &lt;li&gt;CMS GUIDE Model&lt;/li&gt;
+                &lt;li&gt;Medicare Diabetes Prevention&lt;/li&gt;
+                &lt;li&gt;Social Prescribing Movement&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Phase 2: Practice Model --&gt;
+    &lt;div class="phase-column"&gt;
+        &lt;div class="header-label bg-navy"&gt;2. PROVEN PRACTICE MODEL&lt;/div&gt;
+        &lt;div class="connector"&gt;↓&lt;/div&gt;
+        &lt;div class="block highlight"&gt;
+            &lt;strong&gt;Academic-Community Partnership&lt;/strong&gt;
+            &lt;strong&gt;Clinical-Community Partnership&lt;/strong&gt;
+            &lt;p style="margin: 10px 0; font-weight: bold; color: var(--navy);"&gt;MyHealthIowa + Iowa Community HUB&lt;/p&gt;
+            &lt;p&gt;Demonstrated success in bridging clinical care and community resources.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Phase 3: Gaps --&gt;
+    &lt;div class="phase-column"&gt;
+        &lt;div class="header-label bg-amber"&gt;3.POLICY GAPS&lt;/div&gt;
+        &lt;div class="block barrier"&gt;&lt;strong&gt;Gap 1:&lt;/strong&gt; Financing Misalignment&lt;/div&gt;
+        &lt;div class="block barrier"&gt;&lt;strong&gt;Gap 2:&lt;/strong&gt; Fragmented Systems&lt;/div&gt;
+        &lt;div class="block barrier"&gt;&lt;strong&gt;Gap 3:&lt;/strong&gt; Workforce Limitations&lt;/div&gt;
+        &lt;div class="block barrier"&gt;&lt;strong&gt;Gap 4:&lt;/strong&gt; Infrastructure Deficits&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Phase 4: Recommendations --&gt;
+    &lt;div class="phase-column"&gt;
+        &lt;div class="header-label bg-teal"&gt;4. POLICY RECOMMENDATIONS&lt;/div&gt;
+        &lt;div class="block solution"&gt;
+            &lt;strong&gt;R1 &amp; R3:&lt;/strong&gt; Sustainable Reimbursement and CCH Integration
+        &lt;/div&gt;
+        &lt;div class="block solution"&gt;
+            &lt;strong&gt;R2:&lt;/strong&gt; Academic–Community Partnerships through Federal Investment
+        &lt;/div&gt;
+        &lt;div class="block solution"&gt;
+            &lt;strong&gt;R4:&lt;/strong&gt; Diversity and Community-Based Training
+        &lt;/div&gt;
+        &lt;div class="block solution"&gt;
+            &lt;strong&gt;R5:&lt;/strong&gt; Equity-Focused National Quality Metrics
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p style="text-align: center; margin-top: 40px; font-size: 0.8rem; color: #7f8c8d;"&gt;
+    &lt;em&gt;Figure 1: Simplified pathway mapping the transition from identified community models to national policy reform.&lt;/em&gt;
+&lt;/p&gt;</code></pre>
 
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const options = {
-      h5pJsonPath: 'h5p/Timeline',
-      frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/frame.bundle.js',
-      frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css',
-    };
-    const el = document.getElementById('h5p-container');
-    new H5PStandalone.H5P(el, options);
-  });
 
 
 
