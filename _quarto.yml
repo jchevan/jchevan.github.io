@@ -24,9 +24,10 @@ website:
       - href: driverdiagram.qmd
         text: ADRD Driver Diagram
         icon: bi-grid-1x2
-      - href: Policy Image
+      - href: static/policy-pathway.html
         text: Policy Image
         icon: bi-bezier2
+        target: _blank
       - href: static/h5p-test.html
         text: H5P Timeline for Arthritis
         icon: bi-arrow-clockwise
