@@ -83,7 +83,7 @@ title: "ADRD Driver Diagram"
 <div class="main">
   <div class="aim-box">
     <div class="aim-label">Aim statement</div>
-    <p>Adults beginning in midlife are connected with a brain health cascade of care&mdash;risk identification, risk reduction, screening, early detection, follow-up, and action&mdash;supported by public health&#39;s role in embedding brain health across existing prevention and care systems and stewarding community&ndash;clinical linkages.</p>
+    <p>Adults beginning in midlife are connected with a brain health cascade of care&mdash;risk identification, risk reduction, screening, early detection, care planning and services, and follow-up&mdash;supported by public health&#39;s role in embedding brain health across existing prevention and care systems and stewarding community&ndash;clinical linkages.</p>
   </div>
   <div class="stats-bar">
     <div class="stat"><span class="stat-num">6</span><span class="stat-label">Primary drivers</span></div>
@@ -208,7 +208,7 @@ desc:"Enable broad participation by defining flexible, tiered pathways for organ
 core:["Design and implement tiered participation pathways, led or coordinated by public health, with clearly defined minimum requirements so organizations with different staffing, technology, funding, and regulatory capacities can participate in the cascade without being forced into uniform standards that do not fit their operations."],
 supporting:["Provide guidance and support to help organizations understand participation expectations and engage at the level that fits their capacity.","Work with partners to address regulatory and compliance differences across organizations so participation pathways account for variation in licensing, data-sharing requirements, and operational constraints."]},
 {num:"6.2",title:"Shared Service Infrastructure",
-desc:"Reduce burden on community organizations by establishing shared service infrastructure that provides operational, technical, and administrative support, with public health facilitating development, alignment, or use of these models.",
+desc:"Reduce burden on community organizations by establishing shared service infrastructure that provide operational, technical, and administrative support, with public health facilitating development, alignment, or use of these models.",
 core:["Work with partners to establish and support shared service infrastructure, such as shared service hubs or similar models, that provide technology, training, compliance support, and administrative coordination to reduce burden and enable community-based organizations to participate in and deliver services across the cascade.","Leverage Community Care Hubs, umbrella hub models, or similar intermediary entities to implement shared service infrastructure and support participation of community-based organizations across the cascade."],
 supporting:["Provide centralized onboarding, training, and technical assistance to support organizations joining and participating in shared service infrastructure and the broader cascade.","Develop and support service matching tools within shared service infrastructure so organizations can identify and connect individuals to appropriate community-based services.","Support ongoing coordination and sustainability of shared service infrastructure so it continues to function effectively across partners over time."]},
 {num:"6.3",title:"Community Capacity Assessment and Investment Infrastructure",
