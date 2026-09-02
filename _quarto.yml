@@ -22,18 +22,21 @@ website:
         text: Home
         icon: bi-house
 
-      - section: "About"
-        icon: bi-person-badge
+      - section: "Bio"
+        icon: bi-fingerprint
         contents:
           - href: cv.qmd
             text: CV
-            icon: bi-file-person
+            icon: bi-file-earmark-person
+          - href: publications.qmd
+            text: Publications
+            icon: bi-journal-text
 
-      - section: "Projects and Interactives"
-        icon: bi-diagram-3
+      - section: "Projects"
+        icon: bi-clipboard-data
         contents:
           - href: projects.qmd
-            text: Projects Overview
+            text: Collaborations & Labs
             icon: bi-list-task
           - href: driverdiagram.qmd
             text: ADRD Driver Diagram
@@ -43,12 +46,21 @@ website:
             icon: bi-clock-history
             target: _blank
 
-      - section: "Things That Make You Go Hmmmm…"
-        icon: bi-question-diamond
+      - section: "In Vivo"
+        icon: bi-heart-pulse
         contents:
+          - href: books.qmd
+            text: What I'm reading
+            icon: bi-book
+          - href: music.qmd
+            text: What I'm listening to
+            icon: bi-music-note-list
+          - href: maker.qmd
+            text: What I'm making
+            icon: bi-tools
           - href: personal.qmd
-            text: The Stuff I like
-            icon: bi-lightbulb
+            text: Some other stuff I like
+            icon: bi-hand-thumbs-up
     
 format:
   html:
@@ -58,5 +70,5 @@ format:
     toc: true
     link-external-newwindow: true
 
-editor: visual
+editor: source
 

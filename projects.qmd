@@ -2,7 +2,7 @@
 title: "Projects"
 ---
 
-## Collaborations
+## Lab Affiliations
 
 ```{=html}
 <div style="display: flex; gap: 1.5rem;">
@@ -23,10 +23,4 @@ title: "Projects"
 
 ------------------------------------------------------------------------
 
-## Other Projects
-
-### Arthritis Care Model
-
-This is part of the work I am doing with NACDD.
-
-### Informatics and Data Standardization
+## 

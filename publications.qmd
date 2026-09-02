@@ -1,0 +1,98 @@
+---
+title: "Publications"
+format: html
+---
+
+Selected collection of peer-reviewed journal articles and research briefs. For a live bibliography, visit my [{{< ai orcid >}} ORCID Profile](https://orcid.org/0000-0002-3044-4070){target="_blank"}.
+
+------------------------------------------------------------------------
+
+### Chronic Disease Prevention and the Arthritis Care Model
+
+- **Reyes JA, Radske-Suchan T, Doll J, Chevan J.**\
+  Advancing equitable healthy aging through cross-sector community partnerships: policy pathways for community-integrated care.\
+  *J Gerontol Nurs.* 2026;52(8):7-12. [doi:10.3928/00989134-20260701-02](https://doi.org/10.3928/00989134-20260701-02){target="_blank"}
+
+- **Chevan J, Erck E, Murphy H, Fallon EA, Foster AL, Odom EL, Schott C.**\
+  Connecting primary care and community services: a new framework for comprehensive osteoarthritis care.\
+  *J Public Health Manag Pract.* 2026. [doi:10.1097/PHH.0000000000002406](https://doi.org/10.1097/PHH.0000000000002406){target="_blank"}
+
+- **Carluzzo K, Bernstein L, Chevan J, Erck E, Murphy H, Radske-Suchan T, Engebretsen B, Schifferdecker K.**\
+  Application of the Implementation Research Logic Model for evaluating a framework for disseminating arthritis-appropriate evidence-based interventions.\
+  *Front Health Serv.* 2025;5:1630135. [doi:10.3389/frhs.2025.1630135](https://doi.org/10.3389/frhs.2025.1630135){target="_blank"}
+
+- **Chevan J, Doll JD, Radske-Suchan T, Erck E, Murphy H.**\
+  Building seamless care transitions: connecting physical therapy to community resources for older adults with arthritis.\
+  *J Geriatr Phys Ther.* 2025;48(3):172-181. [doi:10.1519/JPT.0000000000000459](https://doi.org/10.1519/JPT.0000000000000459){target="_blank"}
+
+- **Chevan J, Barrett M, Nowakowski K, Pappas K, Murphy H, Erck E, Weisner S.**\
+  Responding to stakeholder needs to engage rehabilitation professionals in the delivery of evidence-based health programming for adults with osteoarthritis.\
+  *Front Rehabilit Science.* 2022;3:907477. [doi:10.3389/fresc.2022.907477](https://doi.org/10.3389/fresc.2022.907477){target="_blank"}
+
+------------------------------------------------------------------------
+
+### Health Services Research, Policy, Workforce, & Disparities
+
+- **Ratoza M, Patel RM, Brewer W, Mitchell K, Chevan J.**\
+  Geospatial disparities in access to outpatient physical and occupational therapy services in Texas: implications for health equity and rehabilitation workforce policy.\
+  *Int J Environ Res Public Health.* 2026;23(4):517. [doi:10.3390/ijerph23040517](https://doi.org/10.3390/ijerph23040517){target="_blank"}
+
+- **Ratoza M, Patel RM, Brewer W, Mitchell K, Chevan J.**\
+  Geographic disparities in rehabilitation provider availability and community demographics in Texas: a cross-sectional geographic information systems study.\
+  *Phys Ther.* 2026:pzag014. [doi:10.1093/ptj/pzag014](https://doi.org/10.1093/ptj/pzag014){target="_blank"}
+
+- **Chevan J, Chevan A.**\
+  Mind the gap, an analysis of physical therapist earnings in the United States by sex.\
+  *Phys Ther.* 2022;102(3):pzab306. [doi:10.1093/ptj/pzab306](https://doi.org/10.1093/ptj/pzab306){target="_blank"}
+
+- **Chevan J, Riddle DL, Reed SD.**\
+  Out-of-pocket spending for ambulatory physical therapy services from 2008 to 2012: a national panel survey.\
+  *Phys Ther.* 2015;95:1680-1691. [doi:10.2522/ptj.20140513](https://doi.org/10.2522/ptj.20140513){target="_blank"}
+
+- **Lefebvre KM, Chevan J.**\
+  The persistence of gender and racial disparities in vascular lower extremity amputation: an examination of HCUP NIS data (2002-2011).\
+  *Vasc Med.* 2015;20(1)51-59. [doi:10.1177/1358863X14562094](https://doi.org/10.1177/1358863X14562094){target="_blank"}
+
+------------------------------------------------------------------------
+
+### Professional Education & Global Health
+
+- **Shields RK, Chevan J, Kennedy K, Bailey C, Dudley-Javoroski S.**\
+  National benchmarks to understand how Doctor of Physical Therapy learners from minoritized race and ethnicity groups perceive their physical therapist education program.\
+  *Phys Ther.* 2024;104(9):pzae047. [doi:10.1093/ptj/pzae047](https://doi.org/10.1093/ptj/pzae047){target="_blank"}
+
+- **Chevan J, Heath AE.**\
+  Developing core education principles for rehabilitation professionals in response to the opioid crisis: an example from physical therapy education.\
+  *Disabil Rehabil.* 2021;43(15):2227-2232. [doi:10.1080/09638288.2019.1696416](https://doi.org/10.1080/09638288.2019.1696416){target="_blank"}
+
+- **Pascal M, Mann M, Dunleavy K, Chevan J, Kirenga L, Assuman N.**\
+  Leadership development of rehabilitation professionals in a low-resource country: a transformational leadership, project-based model.\
+  *Front Public Health.* 2017;5:143. [doi:10.3389/fpubh.2017.00143](https://doi.org/10.3389/fpubh.2017.00143){target="_blank"}
+
+------------------------------------------------------------------------
+
+### Health Informatics in Rehabilitation
+
+- **Chevan J, Pak SS, Wilkinson SG, Toole E.**\
+  Building a foundation for health informatics content in physical therapy education through concept analysis and concept mapping.\
+  *J Phys Ther Educ.* 2023;37(1):24-30. [doi:10.1097/JTE.0000000000000267](https://doi.org/10.1097/JTE.0000000000000267){target="_blank"}
+
+- **Daley KN, Krushel D, Chevan J.**\
+  The physical therapist informatician as an enabler of capacity in a data-driven environment: an administrative case report.\
+  *Physiother Theory Pract.* 2020;36(10):1153-1163. [doi:10.1080/09593985.2018.1548045](https://doi.org/10.1080/09593985.2018.1548045){target="_blank"}
+
+- **Wilkinson SG, Chevan J, Vreeman D.**\
+  Establishing the centrality of health informatics in physical therapist education: if not now, when?\
+  *J Phys Ther Educ.* 2010;24(3):10-15. [doi:10.1097/00001416-201010000-00003](https://doi.org/10.1097/00001416-201010000-00003){target="_blank"}
+
+------------------------------------------------------------------------
+
+### FITT Lab publications
+
+- **Futrell E, Chevan J.**\
+  Effects of long-term minimal footwear use on fall-risk and fall incidence in older adults.\
+  *Gerontology.* 2025:1-21. [doi:10.1159/000550264](https://doi.org/10.1159/000550264){target="_blank"}
+
+- **Futrell E, Kaufman R, Chevan J.**\
+  Long-term effects and impressions of minimal footwear in older adults.\
+  *Gerontology.* 2024;70(11):1137-1147. [doi:10.1159/000540957](https://doi.org/10.1159/000540957){target="_blank"}

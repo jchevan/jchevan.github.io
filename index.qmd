@@ -1,6 +1,7 @@
 ---
 title: "Julia Chevan"
 subtitle: "PT, DPT, PhD, MPH"
+toc: false
 about:
   template: trestles
   image-shape: round
@@ -19,8 +20,20 @@ about:
       href: mailto:jchevan@springfieldcollege.edu
 ---
 
-Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. 
+Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention.
 
 I am a faculty member with the [Clinical Research PhD Program](https://accelerated.uj.edu/academics/programs/clinical-research/){target="_blank"} at the University of Jamestown.
 
 I also engage in public health work as a subject matter expert working with the [National Association of Chronic Disease Directors](https://chronicdisease.org){target="_blank"}. My public health work focuses on building models for community-clinical partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions.
+
+---
+
+#### What You'll Find on My Website
+
+Use that left navigation sidebar to explore these sections further
+
+* <i class="bi bi-fingerprint me-2"></i> **Bio** is where you'll find the professional achievements in one spot. You wanna see a CV? I've got one posted and maybe even updated.
+* <i class="bi bi-clipboard-data me-2"></i> **Projects** click if you are curious about my current projects and the labs I'm associated with as well as a few artifacts from public health initiatives developed through my work at NACDD.
+* <i class="bi bi-heart-pulse me-2"></i> **In Vivo** honestly, this is all the really cool stuff (yes, my non-academic interests).
+
+![ ](images/ADK100323.png){width="100%" .rounded}

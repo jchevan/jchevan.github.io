@@ -6,6 +6,7 @@
     "section": "",
     "text": "ADRD Community-Clinical Linkages Framework — Key Driver Diagram\n\n\n\n\n  Draft — Do Not Share · June 1, 2026\n  ADRD Community-Clinical Linkages Framework — Key Driver Diagram\n\n\n  \n    Aim statement\n    Adults beginning in midlife are connected with a brain health cascade of care—risk identification, risk reduction, screening, early detection, care planning and services, and follow-up—supported by public health’s role in embedding brain health across existing prevention and care systems and stewarding community–clinical linkages.\n  \n  \n    6Primary drivers\n    \n    20Secondary drivers\n    \n    46Core activities\n    \n    40Supporting activities\n  \n  \n    Key:\n    PD1 — Governance\n    PD2 — Population reach\n    PD3 — Data & learning\n    PD4 — Navigation\n    PD5 — Financing\n    PD6 — Community\n    Supporting activities\n  \n  \n    Expand all\n    Collapse all",
     "crumbs": [
+      "Projects",
       "ADRD Driver Diagram"
     ]
   },
@@ -17,33 +18,69 @@
     "text": "document.addEventListener('DOMContentLoaded', function () {\n    const options = {\n      h5pJsonPath: 'h5p/Timeline',\n      frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/frame.bundle.js',\n      frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/styles/h5p.css',\n    };\n    const el = document.getElementById('h5p-container');\n    new H5PStandalone.H5P(el, options);\n  });"
   },
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Selected collection of peer-reviewed journal articles and research briefs. For a live bibliography, visit my  ORCID Profile.\n\n\nChronic Disease Prevention and the Arthritis Care Model\n\nReyes JA, Radske-Suchan T, Doll J, Chevan J.\nAdvancing equitable healthy aging through cross-sector community partnerships: policy pathways for community-integrated care.\nJ Gerontol Nurs. 2026;52(8):7-12. doi:10.3928/00989134-20260701-02\nChevan J, Erck E, Murphy H, Fallon EA, Foster AL, Odom EL, Schott C.\nConnecting primary care and community services: a new framework for comprehensive osteoarthritis care.\nJ Public Health Manag Pract. 2026. doi:10.1097/PHH.0000000000002406\nCarluzzo K, Bernstein L, Chevan J, Erck E, Murphy H, Radske-Suchan T, Engebretsen B, Schifferdecker K.\nApplication of the Implementation Research Logic Model for evaluating a framework for disseminating arthritis-appropriate evidence-based interventions.\nFront Health Serv. 2025;5:1630135. doi:10.3389/frhs.2025.1630135\nChevan J, Doll JD, Radske-Suchan T, Erck E, Murphy H.\nBuilding seamless care transitions: connecting physical therapy to community resources for older adults with arthritis.\nJ Geriatr Phys Ther. 2025;48(3):172-181. doi:10.1519/JPT.0000000000000459\nChevan J, Barrett M, Nowakowski K, Pappas K, Murphy H, Erck E, Weisner S.\nResponding to stakeholder needs to engage rehabilitation professionals in the delivery of evidence-based health programming for adults with osteoarthritis.\nFront Rehabilit Science. 2022;3:907477. doi:10.3389/fresc.2022.907477\n\n\n\n\nHealth Services Research, Policy, Workforce, & Disparities\n\nRatoza M, Patel RM, Brewer W, Mitchell K, Chevan J.\nGeospatial disparities in access to outpatient physical and occupational therapy services in Texas: implications for health equity and rehabilitation workforce policy.\nInt J Environ Res Public Health. 2026;23(4):517. doi:10.3390/ijerph23040517\nRatoza M, Patel RM, Brewer W, Mitchell K, Chevan J.\nGeographic disparities in rehabilitation provider availability and community demographics in Texas: a cross-sectional geographic information systems study.\nPhys Ther. 2026:pzag014. doi:10.1093/ptj/pzag014\nChevan J, Chevan A.\nMind the gap, an analysis of physical therapist earnings in the United States by sex.\nPhys Ther. 2022;102(3):pzab306. doi:10.1093/ptj/pzab306\nChevan J, Riddle DL, Reed SD.\nOut-of-pocket spending for ambulatory physical therapy services from 2008 to 2012: a national panel survey.\nPhys Ther. 2015;95:1680-1691. doi:10.2522/ptj.20140513\nLefebvre KM, Chevan J.\nThe persistence of gender and racial disparities in vascular lower extremity amputation: an examination of HCUP NIS data (2002-2011).\nVasc Med. 2015;20(1)51-59. doi:10.1177/1358863X14562094\n\n\n\n\nProfessional Education & Global Health\n\nShields RK, Chevan J, Kennedy K, Bailey C, Dudley-Javoroski S.\nNational benchmarks to understand how Doctor of Physical Therapy learners from minoritized race and ethnicity groups perceive their physical therapist education program.\nPhys Ther. 2024;104(9):pzae047. doi:10.1093/ptj/pzae047\nChevan J, Heath AE.\nDeveloping core education principles for rehabilitation professionals in response to the opioid crisis: an example from physical therapy education.\nDisabil Rehabil. 2021;43(15):2227-2232. doi:10.1080/09638288.2019.1696416\nPascal M, Mann M, Dunleavy K, Chevan J, Kirenga L, Assuman N.\nLeadership development of rehabilitation professionals in a low-resource country: a transformational leadership, project-based model.\nFront Public Health. 2017;5:143. doi:10.3389/fpubh.2017.00143\n\n\n\n\nHealth Informatics in Rehabilitation\n\nChevan J, Pak SS, Wilkinson SG, Toole E.\nBuilding a foundation for health informatics content in physical therapy education through concept analysis and concept mapping.\nJ Phys Ther Educ. 2023;37(1):24-30. doi:10.1097/JTE.0000000000000267\nDaley KN, Krushel D, Chevan J.\nThe physical therapist informatician as an enabler of capacity in a data-driven environment: an administrative case report.\nPhysiother Theory Pract. 2020;36(10):1153-1163. doi:10.1080/09593985.2018.1548045\nWilkinson SG, Chevan J, Vreeman D.\nEstablishing the centrality of health informatics in physical therapist education: if not now, when?\nJ Phys Ther Educ. 2010;24(3):10-15. doi:10.1097/00001416-201010000-00003\n\n\n\n\nFITT Lab publications\n\nFutrell E, Chevan J.\nEffects of long-term minimal footwear use on fall-risk and fall incidence in older adults.\nGerontology. 2025:1-21. doi:10.1159/000550264\nFutrell E, Kaufman R, Chevan J.\nLong-term effects and impressions of minimal footwear in older adults.\nGerontology. 2024;70(11):1137-1147. doi:10.1159/000540957",
+    "crumbs": [
+      "Bio",
+      "Publications"
+    ]
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
     "text": "Dr. Erin Futrell's FITT Lab where I am an Analytics Consultant (yes, I wore the minimalist shoes and yes, I still do my \"toe yoga\").\n    Foot Intrinsic Testing and Training Lab\n  \n  \n    \n    \n    Dr. Madeline Ratoza's Rehab Maps Research Lab — research on access and equity in physical therapy services using layered maps.\n    Rehab Maps Research Lab",
     "crumbs": [
-      "Projects"
+      "Projects",
+      "Collaborations & Labs"
     ]
   },
   {
-    "objectID": "projects.html#collaborations",
-    "href": "projects.html#collaborations",
+    "objectID": "projects.html#lab-affiliations",
+    "href": "projects.html#lab-affiliations",
     "title": "Projects",
     "section": "",
     "text": "Dr. Erin Futrell's FITT Lab where I am an Analytics Consultant (yes, I wore the minimalist shoes and yes, I still do my \"toe yoga\").\n    Foot Intrinsic Testing and Training Lab\n  \n  \n    \n    \n    Dr. Madeline Ratoza's Rehab Maps Research Lab — research on access and equity in physical therapy services using layered maps.\n    Rehab Maps Research Lab",
     "crumbs": [
-      "Projects"
+      "Projects",
+      "Collaborations & Labs"
     ]
   },
   {
-    "objectID": "projects.html#other-projects",
-    "href": "projects.html#other-projects",
-    "title": "Projects",
-    "section": "Other Projects",
-    "text": "Other Projects\n\nArthritis Care Model\nThis is part of the work I am doing with NACDD.\n\n\nInformatics and Data Standardization",
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "What I’m Reading",
+    "section": "",
+    "text": "Most of my reading happens digitally via my local library on Libby. Here is what’s currently checked out and on my virtual nightstand.\n\n\nCurrently Checked Out\n\nMudlark — Lara Maiklem\nMudlarking is a whole world onto itself, now I get it.\nOnly Cold Depths — Jennifer Estep\nI just needed an easy read space opera.\n\n\n\n\nRecent Library Returns\n\nThe Employees — Olga Ravn\nA Guardian and a Thief — Megha Majumdar\n\nCrying in H Mart — Michelle Zauner",
     "crumbs": [
-      "Projects"
+      "In Vivo",
+      "What I'm reading"
+    ]
+  },
+  {
+    "objectID": "music.html",
+    "href": "music.html",
+    "title": "What I’m listening to",
+    "section": "",
+    "text": "Heavy rotation, favorite albums, playlists, and live show discoveries.\n\n\nOn repeat\n\n\n\n\n&lt;/div&gt;\n&lt;div class=\"quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: flex-start;\"&gt;\n\n\n\n\n\n\n&lt;/div&gt;\n&lt;div class=\"quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: flex-start;\"&gt;\n\n\n\n\n\n\n\nNew Music Playlists\nTracking annual music releases in real-time. One playlist per year, strictly rhymed.\n\n2026 Picks\n2025 Strive\n2024 Score\n2023 Let’s see\n2022 For you\n2021 And on\n2020 Plenty\n2019 Scene",
+    "crumbs": [
+      "In Vivo",
+      "What I'm listening to"
+    ]
+  },
+  {
+    "objectID": "maker.html",
+    "href": "maker.html",
+    "title": "Maker Space",
+    "section": "",
+    "text": "Lots of wonky basketry weaving, but I forage the materials and make them myself.",
+    "crumbs": [
+      "In Vivo",
+      "What I'm making"
     ]
   },
   {
@@ -51,9 +88,20 @@
     "href": "index.html",
     "title": "Julia Chevan",
     "section": "",
-    "text": "Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention. \nI am a faculty member with the Clinical Research PhD Program at the University of Jamestown.\nI also engage in public health work as a subject matter expert working with the National Association of Chronic Disease Directors. My public health work focuses on building models for community-clinical partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions.",
+    "text": "Hi, I am Julia. I am a physical therapist, health services researcher, and public health professional with more than 30 years of experience at the intersection of academia, rehabilitation, implementation science, and chronic disease prevention.\nI am a faculty member with the Clinical Research PhD Program at the University of Jamestown.\nI also engage in public health work as a subject matter expert working with the National Association of Chronic Disease Directors. My public health work focuses on building models for community-clinical partnerships that improve outcomes for people living with arthritis, fall risk, and other chronic conditions.\n\n\nWhat You’ll Find on My Website\nUse that left navigation sidebar to explore these sections further\n\n Bio is where you’ll find the professional achievements in one spot. You wanna see a CV? I’ve got one posted and maybe even updated.\n Projects click if you are curious about my current projects and the labs I’m associated with as well as a few artifacts from public health initiatives developed through my work at NACDD.\n In Vivo honestly, this is all the really cool stuff (yes, my non-academic interests).",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "personal.html",
+    "href": "personal.html",
+    "title": "A few more of my favorite things",
+    "section": "",
+    "text": "Good morning, have a game with your tea or coffee?\n\n\nThese are my dailys\n\n\nNYT Mini crossword\nNYT Midi crossword\nNYT Connections\nMapTap",
+    "crumbs": [
+      "In Vivo",
+      "Some other stuff I like"
     ]
   },
   {
@@ -63,6 +111,7 @@
     "section": "",
     "text": "Download PDF file.",
     "crumbs": [
+      "Bio",
       "CV"
     ]
   }

@@ -1,0 +1,17 @@
+---
+title: "A few more of my favorite things"
+toc: false
+---
+
+<h4 style="margin-bottom: 1.5rem;">Good morning, have a game with your tea or coffee? </h4>
+<h5>These are my dailys</h5>
+
+- [**NYT Mini crossword**](https://www.nytimes.com/crosswords){target="_blank"}
+
+- [**NYT Midi crossword**](https://www.nytimes.com/crosswords){target="_blank"}
+
+- [**NYT Connections**](https://www.nytimes.com/games/connections){target="_blank"}
+
+- [**MapTap**](https://maptap.gg){target="_blank"}
+
+---

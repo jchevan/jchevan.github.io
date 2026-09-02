@@ -1,0 +1,35 @@
+---
+title: "What I'm listening to"
+toc: false
+---
+
+Heavy rotation, favorite albums, playlists, and live show discoveries.
+
+------------------------------------------------------------------------
+
+#### On repeat
+
+::: {layout-ncol="2"}
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2NSzwyYvQvdOQAoEjrlw9c?utm_source=generator&amp;si=7c0caaedf7e746b2" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+
+</iframe>
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2ENa1Ue5JjVL5bqwpRI7sx?utm_source=generator&amp;si=7f5e7775e5564b67" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+
+</iframe>
+:::
+
+------------------------------------------------------------------------
+
+#### New Music Playlists
+
+Tracking annual music releases in real-time. One playlist per year, strictly rhymed.
+
+- [**2026 Picks**](https://open.spotify.com/playlist/7y5rW9A4IYJQja5dj7e7xL?si=3081c2ea81f843b4){target="_blank"}
+- [**2025 Strive**](https://open.spotify.com/playlist/4llI31SJ25zmAyy7QFfOsS?si=bc4260c10b3f40f1){target="_blank"}
+- [**2024 Score**](https://open.spotify.com/playlist/5vKnZTrZ1j6PkU3W96921H?si=8407e5eeeb4d4ad4){target="_blank"}
+- [**2023 Let's see**](https://open.spotify.com/playlist/2ry5FLA1n3wESU0uDr4vr7?si=51287ed8fd3f418c){target="_blank"}
+- [**2022 For you**](https://open.spotify.com/playlist/6Wj9Gap6eeUIR8XXJq0BjM?si=0ebde8e7a91e4645){target="_blank"}
+- [**2021 And on**](https://open.spotify.com/playlist/3wS2VPlDIzJd8QxUUCkMZx?si=1d787d6c88284f14){target="_blank"}
+- [**2020 Plenty**](https://open.spotify.com/playlist/6EERnWlzU4ASgj0xDDCQ9W?si=49bd179f260446f7){target="_blank"}
+- [**2019 Scene**](https://open.spotify.com/playlist/34mN5bwM4DsUIwo1tYdOMH?si=98d893ed6deb489c){target="_blank"}
