@@ -16,23 +16,39 @@ website:
     logo: images/JCLogoBl.png
     style: "docked"
     search: true
+    collapse-level: 1
     contents:
       - href: index.qmd
         text: Home
         icon: bi-house
-      - href: cv.qmd
-        text: CV
-        icon: bi-file-person
-      - href: projects.qmd
-        text: Projects
-        icon: bi-list
-      - href: driverdiagram.qmd
-        text: ADRD Driver Diagram
-        icon: bi-grid-1x2
-      - href: static/h5p-test.html
-        text: H5P Timeline for Arthritis
-        icon: bi-arrow-clockwise
-        target: _blank
+
+      - section: "About"
+        icon: bi-person-badge
+        contents:
+          - href: cv.qmd
+            text: CV
+            icon: bi-file-person
+
+      - section: "Projects and Interactives"
+        icon: bi-diagram-3
+        contents:
+          - href: projects.qmd
+            text: Projects Overview
+            icon: bi-list-task
+          - href: driverdiagram.qmd
+            text: ADRD Driver Diagram
+            icon: bi-grid-1x2
+          - href: static/h5p-test.html
+            text: H5P Timeline for Arthritis
+            icon: bi-clock-history
+            target: _blank
+
+      - section: "Things That Make You Go Hmmmm…"
+        icon: bi-question-diamond
+        contents:
+          - href: personal.qmd
+            text: The Stuff I like
+            icon: bi-lightbulb
     
 format:
   html:
