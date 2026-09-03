@@ -6,12 +6,14 @@ toc: false
 <h4 style="margin-bottom: 1.5rem;">Good morning, have a game with your tea or coffee? </h4>
 <h5>These are my dailys</h5>
 
-- [**NYT Mini crossword**](https://www.nytimes.com/crosswords){target="_blank"}
+* <i class="bi bi-grid me-2"></i> [**NYT Mini crossword**](https://www.nytimes.com/crosswords){target="_blank"}
 
-- [**NYT Midi crossword**](https://www.nytimes.com/crosswords){target="_blank"}
+* <i class="bi bi-grid-3x3-gap me-2"></i> [**NYT Midi crossword**](https://www.nytimes.com/crosswords){target="_blank"}
 
-- [**NYT Connections**](https://www.nytimes.com/games/connections){target="_blank"}
+* <i class="bi bi-share me-2"></i> [**NYT Connections**](https://www.nytimes.com/games/connections){target="_blank"}
 
-- [**MapTap**](https://maptap.gg){target="_blank"}
+* <i class="bi bi-bug me-2"></i> [**NYT Spelling Bee**](https://www.nytimes.com/puzzles/spelling-bee){target="_blank"}
+
+* <i class="bi bi-globe-europe-africa me-2"></i> [**MapTap**](https://maptap.gg){target="_blank"}
 
 ---
