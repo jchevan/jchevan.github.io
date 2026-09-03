@@ -4,16 +4,21 @@ toc: false
 ---
 
 <h4 style="margin-bottom: 1.5rem;">Good morning, have a game with your tea or coffee? </h4>
-<h5>These are my dailys</h5>
+<h5>These are my dailies</h5>
 
-* <i class="bi bi-grid me-2"></i> [**NYT Mini crossword**](https://www.nytimes.com/crosswords){target="_blank"}
+* <img src="images/NYTmini.png" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> [**NYT Mini crossword**](https://www.nytimes.com/crosswords){target="_blank"}
 
-* <i class="bi bi-grid-3x3-gap me-2"></i> [**NYT Midi crossword**](https://www.nytimes.com/crosswords){target="_blank"}
+* <img src="images/NYTmidi.png" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> [**NYT Midi crossword**](https://www.nytimes.com/crosswords){target="_blank"}
 
-* <i class="bi bi-share me-2"></i> [**NYT Connections**](https://www.nytimes.com/games/connections){target="_blank"}
+* <img src="images/NYTconnections.png" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> [**NYT Connections**](https://www.nytimes.com/games/connections){target="_blank"}
 
-* <i class="bi bi-bug me-2"></i> [**NYT Spelling Bee**](https://www.nytimes.com/puzzles/spelling-bee){target="_blank"}
+* <img src="images/NYTbee.png" width="20" height="20" style="vertical-align: middle; margin-right: 6px;"> [**NYT Spelling Bee**](https://www.nytimes.com/puzzles/spelling-bee){target="_blank"}
 
 * <i class="bi bi-globe-europe-africa me-2"></i> [**MapTap**](https://maptap.gg){target="_blank"}
+
+* <i class="bi bi-patch-question-fill me-2"></i> [**Clues by Sam**](https://cluesbysam.com){target="_blank"}
+
+* <i class="bi bi-share me-2"></i> [**The Loop**](https://www.britannica.com/games/loop){target="_blank"}
+
 
 ---
