@@ -2,25 +2,36 @@
 title: "Projects"
 ---
 
-## Lab Affiliations
+## Lab and Working Group Affiliations
 
-```{=html}
-<div style="display: flex; gap: 1.5rem;">
-  <div style="flex: 1; border: 1px solid #dee2e6; border-radius: 8px; padding: 1.5rem;">
-    <img src="images/FiTTlab.png" style="width: 100%; margin-bottom: 1rem;">
-    <h3>FITT Lab</h3>
-    <p>Dr. Erin Futrell's FITT Lab where I am an Analytics Consultant (yes, I wore the minimalist shoes and yes, I still do my "toe yoga").</p>
-    <a href="https://gulick.springfield.edu/fitt/"target="_blank">Foot Intrinsic Testing and Training Lab</a>
-  </div>
-  <div style="flex: 1; border: 1px solid #dee2e6; border-radius: 8px; padding: 1.5rem;">
-    <img src="images/RehabMaps.png" style="width: 100%; margin-bottom: 1rem;">
-    <h3>Rehab Maps Research Lab</h3>
-    <p>Dr. Madeline Ratoza's Rehab Maps Research Lab — research on access and equity in physical therapy services using layered maps.</p>
-    <a href="https://www.madelineratoza.com/rehab-maps-research-lab"target="_blank">Rehab Maps Research Lab</a>
-  </div>
-</div>
-```
+::: {.grid}
 
-------------------------------------------------------------------------
+::: {.g-col-12 .g-col-md-4 .card .p-3}
+![](images/FiTTlab.png){width="100%" style="margin-bottom: 1rem;"}
 
-## 
+### FITT Lab
+
+Dr. Erin Futrell's FITT Lab where I am an Analytics Consultant (yes, I wore the minimalist shoes and yes, I still do my "toe yoga").
+
+[Foot Intrinsic Testing and Training Lab](https://gulick.springfield.edu/fitt/){target="_blank"}
+:::
+
+::: {.g-col-12 .g-col-md-4 .card .p-3}
+![](images/RehabMaps.png){width="100%" style="margin-bottom: 1rem;"}
+
+### Rehab Maps Research Lab
+
+Dr. Madeline Ratoza's Rehab Maps Research Lab — research on access and equity in physical therapy services using layered maps.
+
+[Rehab Maps Research Lab](https://www.madelineratoza.com/rehab-maps-research-lab){target="_blank"}
+:::
+
+::: {.g-col-12 .g-col-md-4 .card .p-3}
+![](images/ReDILogo.png){width="100%" style="margin-bottom: 1rem;"}
+
+### ReDI
+
+Rehabilitation Data Infrastructure Workgroup is a collaborative interdisciplinary working group that is advancing data infrastructure standards to advance learning health systems to promote rehabilitation research.
+:::
+
+:::
