@@ -4,3 +4,11 @@ format: html
 ---
 
 Lots of wonky basketry weaving, but I forage the materials and make them myself.
+
+::: {layout-ncol=2}
+
+![Birch bark projects, Fall 2026 with ADK bark!](images/ADKBark.png)
+
+![My first Tatza](images/Tatza.png)
+
+:::
